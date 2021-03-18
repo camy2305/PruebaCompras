@@ -1,0 +1,16 @@
+co/com/proyectobase/screenplay/userinterface/ValidarPrecioPage.java
+ co.com.proyectobase.screenplay.userinterface.ValidarPrecioPage
+co/com/proyectobase/screenplay/userinterface/HomePage.java
+ co.com.proyectobase.screenplay.userinterface.HomePage
+co/com/proyectobase/screenplay/util/CalcularDias.java
+ co.com.proyectobase.screenplay.util.CalcularDias
+co/com/proyectobase/screenplay/tasks/PrecioEconomico.java
+ co.com.proyectobase.screenplay.tasks.PrecioEconomico
+co/com/proyectobase/screenplay/interactions/SeleccionarLocation.java
+ co.com.proyectobase.screenplay.interactions.SeleccionarLocation
+co/com/proyectobase/screenplay/userinterface/SeleccionHotelPage.java
+ co.com.proyectobase.screenplay.userinterface.SeleccionHotelPage
+co/com/proyectobase/screenplay/questions/VerificarPrecio.java
+ co.com.proyectobase.screenplay.questions.VerificarPrecio
+co/com/proyectobase/screenplay/tasks/Seleccionar.java
+ co.com.proyectobase.screenplay.tasks.Seleccionar

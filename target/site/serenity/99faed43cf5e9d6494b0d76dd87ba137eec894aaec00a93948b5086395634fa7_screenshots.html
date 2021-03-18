@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Demo Project using Serenity and Cucumber</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="6f832c84baec0f6696692c336bd7f3fe7d545d3e0c19eb5ad2864b9122a46dba.html">Verificar La Tarifa De Los Clientes</a></span>
+                > <span class="truncate-60"><a
+                    href="99faed43cf5e9d6494b0d76dd87ba137eec894aaec00a93948b5086395634fa7.html">buscar tarifa mas economica en los diferentes destinos y verificar </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 18-03-2021 15:38</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Verificar La Tarifa De Los Clientes </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="2fc36a0bbb5aaee5d8b3c4d78c18008867f2784a18879b6ceaca47d122488b04.html">Exitosos
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">buscar tarifa mas economica en los diferentes destinos y verificar
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given Yo ingreso a la pagina de viajes<br>When Yo selecciono la ciudad &lt;location&gt; en el dia &lt;checkIn&gt; hasta &lt;checkOut&gt;<br>And yo selecciono precio mas economico<br>Then yo valido precio total &lt;checkIn&gt; con &lt;checkOut&gt;</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="ec2a38eca940a55b0be962b4ef1082768f34e5de34c63ec015eca5a9e812615a.png" title="buscar tarifa mas economica en los diferentes destinos y verificar #1: {location=Los Angeles, checkIn=03/20/2021, checkOut=03/21/2021}" width="1366"/>
+                <img src="27b749659adfc52f1376cdad2dc034f4836b867e5a886d94af0c3eb826d0720a.png" title="Given Yo ingreso a la pagina de viajes" width="1366"/>
+                <img src="27b749659adfc52f1376cdad2dc034f4836b867e5a886d94af0c3eb826d0720a.png" title="Rafa opens the Home page" width="1366"/>
+                <img src="e2c79f9234ebe90dd49c1f4d19c495a8c3886d8d22b43de8d73db6e2f991ad0e.png" title="When Yo selecciono la ciudad Los Angeles en el dia 03/20/2021 hasta 03/21/2021" width="1366"/>
+                <img src="9ae9e1c403be27772008ab2234b05506da8c46e611bbb901c1c3b10aa8567637.png" title="Rafa clicks on LISTA_SELECCI&Oacute;N" width="1366"/>
+                <img src="4d0722aea1f932999267e53ea81dc5df951de4529651a1449a05f2ec1fe0210e.png" title="Rafa clicks on TEXTO_CHECKIN" width="1366"/>
+                <img src="d4e4f38e2375c534ebe8a6d6ef4cdb52e06292394f7eeb978d262ed4b59ab810.png" title="Rafa enters '03/20/2021' into TEXTO_CHECKIN" width="1366"/>
+                <img src="43ef0e3b9e4af0e302f67365a5ab1c85e7e39a98caebe9c12398f05f243564b8.png" title="Rafa clicks on CHECKOUT" width="1366"/>
+                <img src="be7ecee46e6282616393e988c76beca8d9ab10e26384ac29fced88583a8540b1.png" title="Rafa enters '03/21/2021' into CHECKOUT" width="1366"/>
+                <img src="7fd5691e681a6be5c08c8150127a99ec85691b5ce0c94b7cb7d61f7409e13be1.png" title="Rafa clicks on CHECKOUT" width="1366"/>
+                <img src="ec2a38eca940a55b0be962b4ef1082768f34e5de34c63ec015eca5a9e812615a.png" title="And yo selecciono precio mas economico" width="1366"/>
+                <img src="4625c4da12f1d3d9f10b0595bfd7151c34a15d706fd38d6ff02964510f133f2f.png" title="Rafa clicks on HOTEL_2" width="1366"/>
+                <img src="ec2a38eca940a55b0be962b4ef1082768f34e5de34c63ec015eca5a9e812615a.png" title="Rafa clicks on HOTEL_1_1" width="1366"/>
+                <img src="ec2a38eca940a55b0be962b4ef1082768f34e5de34c63ec015eca5a9e812615a.png" title="Then yo valido precio total 03/20/2021 con 03/21/2021" width="1366"/>
+                <img src="ec2a38eca940a55b0be962b4ef1082768f34e5de34c63ec015eca5a9e812615a.png" title="Then verificar precio should be (true)" width="1366"/>
+                <img src="b95f8c1f63140567aa4c1dcacd7cf2c1848c50be681101e010cd209d823055ff.png" title="buscar tarifa mas economica en los diferentes destinos y verificar #2: {location=San Francisco, checkIn=03/22/2021, checkOut=03/24/2021}" width="1366"/>
+                <img src="27b749659adfc52f1376cdad2dc034f4836b867e5a886d94af0c3eb826d0720a.png" title="Given Yo ingreso a la pagina de viajes" width="1366"/>
+                <img src="27b749659adfc52f1376cdad2dc034f4836b867e5a886d94af0c3eb826d0720a.png" title="Rafa opens the Home page" width="1366"/>
+                <img src="b167eb8e7b50ea8d087ae988b97ea6b9f3ea73ccb9db53d1bc39f1dd05a0b397.png" title="When Yo selecciono la ciudad San Francisco en el dia 03/22/2021 hasta 03/24/2021" width="1366"/>
+                <img src="9ae9e1c403be27772008ab2234b05506da8c46e611bbb901c1c3b10aa8567637.png" title="Rafa clicks on LISTA_SELECCI&Oacute;N" width="1366"/>
+                <img src="82125da0f8fd3b64087b1c11fcab692703ec38a872c87b081e3ba5c175919886.png" title="Rafa clicks on TEXTO_CHECKIN" width="1366"/>
+                <img src="1673f35434e7475760c5968edc7d9a070ced4585ad9a1eb69ab921b6f549b881.png" title="Rafa enters '03/22/2021' into TEXTO_CHECKIN" width="1366"/>
+                <img src="9c47679cc7f62cbf6e6bc2dfa13a84d281588cc205eeef12fe5a3b5cd5b5e130.png" title="Rafa clicks on CHECKOUT" width="1366"/>
+                <img src="a6d42788f5f80212bc6e8a2fc15f1c1de04ba284d9c31603a520a843245dcf44.png" title="Rafa enters '03/24/2021' into CHECKOUT" width="1366"/>
+                <img src="5862d0991573e4cbc788ea8654d822882c56973cdcf923deacaada575f8394cd.png" title="Rafa clicks on CHECKOUT" width="1366"/>
+                <img src="b95f8c1f63140567aa4c1dcacd7cf2c1848c50be681101e010cd209d823055ff.png" title="And yo selecciono precio mas economico" width="1366"/>
+                <img src="5a78fc0344c75de98192dc950e533e0c71c049e9aa032c38fd4fbfe46930278a.png" title="Rafa clicks on HOTEL_1" width="1366"/>
+                <img src="b95f8c1f63140567aa4c1dcacd7cf2c1848c50be681101e010cd209d823055ff.png" title="Rafa clicks on HOTEL_1_1" width="1366"/>
+                <img src="b95f8c1f63140567aa4c1dcacd7cf2c1848c50be681101e010cd209d823055ff.png" title="Then yo valido precio total 03/22/2021 con 03/24/2021" width="1366"/>
+                <img src="b95f8c1f63140567aa4c1dcacd7cf2c1848c50be681101e010cd209d823055ff.png" title="Then verificar precio should be (true): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.9.9</span>
+</div>
+</body>
+</html>

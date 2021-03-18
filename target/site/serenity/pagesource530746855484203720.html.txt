@@ -1,0 +1,1041 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" class="" style=""><head>
+    <title>DXHotels</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!-- Uncomment the line below to disable phone format detection  -->
+    <!--<meta name="format-detection" content="telephone=no">-->
+    <link rel="stylesheet" type="text/css" href="css/dx_common-19.1.css" />
+    <!--<link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/20.2.6/css/dx.common.css" />-->
+    <link rel="stylesheet" href="css/dx_light-19.1.css" />
+    <!--<link rel="dx-theme" data-theme="generic.light" href="https://cdn3.devexpress.com/jslib/20.2.6/css/dx.light.css" />-->
+
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/linkid.js"></script><script src="https://connect.facebook.net/signals/config/436610470729915?v=2.9.33&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-TP4P4KW"></script><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>window.jQuery || document.write(decodeURIComponent('%3Cscript src="js/jquery.min.js"%3E%3C/script%3E'))</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cldrjs/0.4.4/cldr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cldrjs/0.4.4/cldr/event.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cldrjs/0.4.4/cldr/supplemental.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/globalize/1.1.1/globalize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/globalize/1.1.1/globalize/message.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/globalize/1.1.1/globalize/number.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/globalize/1.1.1/globalize/currency.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/globalize/1.1.1/globalize/date.min.js"></script>
+
+    <script type="text/javascript" src="js/dx_all-19.1.0.js"></script>
+    <!--<script type="text/javascript" src="https://cdn3.devexpress.com/jslib/20.2.6/js/dx.web.js"></script>-->
+
+    <!-- Application -->
+
+
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="app.config.js"></script>
+    <script type="text/javascript" src="common.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+    <!-- Layouts -->
+    <link rel="stylesheet" type="text/css" href="customLayouts/Desktop/CustomLayout.css" />
+    <link rel="dx-template" type="text/html" href="customLayouts/Desktop/CustomLayout.html" />
+    <script type="text/javascript" src="customLayouts/Desktop/CustomLayout.js"></script>
+    <script type="text/javascript" src="customLayouts/Desktop/LayoutModel.js"></script>
+
+
+    <!-- Views -->
+
+    <link rel="stylesheet" type="text/css" href="views/home.css" />
+    <script type="text/javascript" src="views/home.js"></script>
+    <link rel="dx-template" type="text/html" href="views/home.html" />
+    <script type="text/javascript" src="views/hotels.js"></script>
+    <link rel="dx-template" type="text/html" href="views/hotels.html" />
+    <link rel="stylesheet" type="text/css" href="views/hotels.css" />
+    <link rel="dx-template" type="text/html" href="views/booking.html" />
+    <link rel="stylesheet" type="text/css" href="views/booking.css" />
+    <script type="text/javascript" src="views/booking.js"></script>
+    <link rel="dx-template" type="text/html" href="views/currentHotel.html" />
+    <link rel="stylesheet" type="text/css" href="views/currentHotel.css" />
+    <script type="text/javascript" src="views/currentHotel.js"></script>
+
+
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&amp;l='+l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j,f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TP4P4KW');
+
+        trackGAEvent = function(category, action, label) {
+            if(window.ga &amp;&amp; window.ga.getAll) { // T566451
+                var _tracker = ga.getAll()[0];
+                if (_tracker) _tracker.send('event', category, action, label);
+            }
+        };
+    </script>
+<script type="text/javascript" src="https://www.bing.com/rb/3A/cj,nj/yg3PP-Q3FzDjbB-xGnd9gXUY9eI.js?bu=B68FzgXnBekFoQXsBbQF"></script><script type="text/javascript" src="https://www.bing.com/rb/3A/cj,nj/dYdu0UlZo-6OkeTzsZ_W9zflJI8.js?bu=AZIF"></script><script type="text/javascript" src="https://www.bing.com/rb/3A/cj,nj/JAJ8l-a0ECv0CcJJiRvmr8uDg4E.js?bu=A68F_AW0BQ"></script><link type="text/css" rel="stylesheet" href="https://www.bing.com/rb/3A/cir2,cc,nc/OWPUvqFz0gpk1jBTsyqbWttgTnY.css?bu=AoIGiAY" /><script type="text/javascript" src="https://www.bing.com/rb/3A/cj,nj/9ZYa-HDuDRBBtiwCYuF_HOa4WYU.js?bu=BK8FqgaZBrQF"></script><script type="text/javascript" src="https://www.bing.com/rb/3A/cj,nj/OSn3o7yEr6llqplDD9k_YdwYgqY.js?bu=A68Fmgi0BQ"></script><script type="text/javascript" src="https://www.bing.com/rb/3A/cj,nj/uTdLXSRz12BwM8hu_cTZFExXTP8.js?bu=BK8F8AX3BbQF"></script><script type="text/javascript" src="https://www.bing.com/rb/3A/cj,nj/flLfkZmHaQUIZOIHBpFCEnD2z3Q.js?bu=A68Fnwi0BQ"></script><script type="text/javascript" src="https://www.bing.com/rb/3A/cj,nj/7vUiMQAKxgU3E022a6YCzRA5J3A.js?bu=A68F9Qa0BQ"></script><link type="text/css" rel="stylesheet" href="https://www.bing.com/rp/GNFnozTAHCTsNWc6kkH_1pU2M30.br.css" /><script type="text/javascript" src="https://www.bing.com/rb/3A/cj,nj/cyUofwEYXunSC5dnzUg_RbXYNvI.js?bu=BK8FnwXkAbQF"></script><link type="text/css" rel="stylesheet" href="https://www.bing.com/rb/3A/cir2,cc,nc/0vGagNJdos80XOCQR7BqAJCG8qQ.css?bu=At4G5QY" /><script type="text/javascript" src="https://www.bing.com/rb/3A/cj,nj/9wHof6p94c-GCVYUbgce7zA4afk.js?bu=BK8FqgbYBrQF"></script><script type="text/javascript" src="https://www.bing.com/rb/3A/cj,nj/tI6FEjq-owLPHtGnbAvDuS2JoQo.js?bu=A68FkhG0BQ"></script><link type="text/css" rel="stylesheet" href="https://www.bing.com/rs/3A/gw/cir2,cc,nc/Kh71odRQHSQ3jSAruvLQhNDEXwg.css" /><script type="text/javascript" src="https://www.bing.com/rb/3A/cj,nj/sJmKPeAi85WBsvYCR-VFxaZoYMU.js?bu=BK8F5gfYB7QF"></script><script type="text/javascript" src="https://www.bing.com/rb/3A/cj,nj/IFnsWqfWcIUNfDnf6gDT0MwaP_Q.js?bu=A68FpAi0BQ"></script><link type="text/css" rel="stylesheet" href="https://www.bing.com/rp/JyS90GSceCtYKlCk92bEmEKq8m4.br.css" /><link type="text/css" rel="stylesheet" href="https://www.bing.com/rs/3A/fq/cir2,cc,nc/7Q-XekDJzjM8n7w2GCnOSEnrVrI.css" /><script type="text/javascript" src="https://www.bing.com/rb/3A/cj,nj/36EENkAYBWGeiBQtiuD9v6Xph20.js?bu=BK8FkAeqB7QF"></script><link type="text/css" rel="stylesheet" href="https://www.bing.com/rp/2rFPxYOhgcsP7KTKXEeG-Tdrlsc.br.css" /><script type="text/javascript" src="https://www.bing.com/rb/3A/cj,nj/SP6nqdkjztCLmmsne2F6c8M4dy0.js?bu=A68Ftg-0BQ"></script><link type="text/css" rel="stylesheet" href="https://www.bing.com/rp/3cVa7W5Uj8vBTV5zATJ3gHqSwrY.br.css" /><script type="text/javascript" src="https://www.bing.com/rb/3A/cj,nj/qtJ2CUn_24BjNa0ROoZjVhKuHW0.js?bu=BK8Fiw_2DrQF"></script><link type="text/css" rel="stylesheet" href="https://www.bing.com/rp/LQE07Tud4TLHIP5pe1MrTCMv-f4.br.css" /><link type="text/css" rel="stylesheet" href="https://www.bing.com/rp/is9cyBgF6WtLAQw4pz7jRPmFzEI.br.css" /><script type="text/javascript" src="https://www.bing.com/rb/3A/cj,nj/pIYTMkTp-YJsKHOTIa2pt5D2e-o.js?bu=BK8FgxCdELQF"></script><link type="text/css" rel="stylesheet" href="https://www.bing.com/rp/J_bojGNv_7tTKICi3L_LLeNXNh0.br.css" /><script type="text/javascript" src="https://www.bing.com/rb/3A/cj,nj/7eYn2onZ36KGNSR7SbxKWBQ6pTc.js?bu=BK8F2wn0CbQF"></script><script type="text/javascript" src="https://www.bing.com/rb/3A/cj,nj/iLr9Dh7_Mjs9cJ2fC0SCM_v9CZ8.js?bu=A68FnBG0BQ"></script><link type="text/css" rel="stylesheet" href="https://www.bing.com/rp/rGCwIXqJ3WpKn3008rX3J--5sBQ.br.css" /><script type="text/javascript" src="https://www.bing.com/rb/3A/cj,nj/v-62kR93L6wIv6pVyiCYo3M5GvM.js?bu=A68F7Qa0BQ"></script></head>
+<body>
+
+
+
+
+<div class="dx-viewport dx-device-desktop dx-device-generic dx-theme-generic dx-theme-generic-typography dx-color-scheme-light"><div class="desktop-layout dx-layout" data-options="dxLayout : {name: 'desktop', platform: 'generic' } ">
+    <div class="page">
+        <!-- ko with: DXHotels.layoutModel -->
+        <div class="header">
+            <div class="main-menu content">
+                <div class="logo" data-bind="click: logoClick"></div>
+                <div class="header-text">
+                    <p class="powered-by">POWERED BY</p>
+                    <p>DEVEXTREME WIDGETS AND SPA FRAMEWORK</p>
+                </div>
+                <div class="buttons-header">
+                    <div class="button-header contact-us main-color white-text dx-button dx-button-normal dx-button-mode-contained dx-widget dx-button-has-text" data-bind="dxButton: {&#10;                        text: 'Contact Us',&#10;                        onClick: showContactPopup,&#10;                        width: 107,&#10;                        height: 33&#10;                    }" role="button" aria-label="Contact Us" tabindex="0" style="width: 107px; height: 33px;"><div class="dx-button-content"><span class="dx-button-text">Contact Us</span></div></div>
+                    <div class="welcom-user" data-bind="visible: userName()" style="display: none;">
+                        Welcome, <span data-bind="text: userName"></span>
+                    </div>
+                    <div class="button-header login main-color white-text dx-button dx-button-normal dx-button-mode-contained dx-widget dx-button-has-text" data-bind="dxButton: {&#10;                        text: 'Login',&#10;                        onClick: showLoginPopup,&#10;                        visible: !userName(),&#10;                        width: 73,&#10;                        height: 33&#10;                    }" role="button" aria-label="Login" tabindex="0" style="width: 73px; height: 33px;"><div class="dx-button-content"><span class="dx-button-text">Login</span></div></div>
+                </div>
+                <div class="popup-contact dx-overlay dx-popup dx-widget dx-state-invisible dx-visibility-change-handler" data-bind="dxPopup: {&#10;                    visible: contactPopupVisible,&#10;                    dragEnabled: false,&#10;                    width: 460,&#10;                    height: 290,&#10;                    position: {&#10;                        at: 'top',&#10;                        offset :'226 189',&#10;                        of: '.page'&#10;                    }, shading: false,&#10;                    closeOnOutsideClick: true&#10;                }"><div class="dx-overlay-content dx-popup-normal" aria-hidden="true" tabindex="0" style="width: 460px; height: 290px;"><div class="dx-popup-content"></div></div></div>
+                <div class="login-popup dx-overlay dx-popup dx-widget dx-state-invisible dx-visibility-change-handler" data-bind="dxPopup: {&#10;                    visible: loginPopupVisible,&#10;                    dragEnabled: false,&#10;                    height: 244,&#10;                    width:610,&#10;                    closeOnOutsideClick: true&#10;                }"><div class="dx-overlay-content dx-popup-normal" aria-hidden="true" tabindex="0" style="width: 610px; height: 244px;"><div class="dx-popup-content"></div></div></div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="content-wrapper">
+                <div data-options="dxContentPlaceholder: { name: 'content' } " class="dx-content-placeholder dx-content-placeholder-content dx-transition-absolute dx-transition dx-transition-content dx-transition-none" data-dx-content-placeholder-name="content" data-dx-transition-type="none" data-dx-transition-name="content"><div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content dx-content-content dx-transition-inner-wrapper dx-inactive-view" data-dx-target-placeholder-id="content">
+        <div class="image">
+            <div class="internal-block-for-search content">
+                <div class="hotel-search">
+                    <div class="title-search">
+                        <p>HOTEL SEARCH</p>
+                    </div>
+                    <div class="search-form form dx-form dx-widget dx-visibility-change-handler" data-bind="dxForm: {&#10;                        formData: {&#10;                            location : searchData.location,&#10;                            checkIn: searchData.checkIn,&#10;                            checkOut: searchData.checkOut,&#10;                            rooms: searchData.rooms,&#10;                            adults: searchData.adults,&#10;                            children: searchData.children&#10;                        },&#10;                        onFieldDataChanged: function(e) {&#10;                            if(e.dataField === 'checkIn') {&#10;                                var editor = e.component.getEditor('checkOut'),&#10;                                    date = e.value;&#10;                                if(editor) {&#10;                                    editor.option('min', new Date(date.getTime() + 1000 * 60 * 60 * 24 * 1));&#10;                                    editor.option('max', new Date(date.getTime() + 1000 * 60 * 60 * 24 * 30));&#10;                                }&#10;                            }&#10;                        },&#10;                        showColonAfterLabel: false,&#10;                        showValidationSummary: true,&#10;                        labelLocation: 'top',&#10;                        showRequiredMark: false,&#10;                        width: 364,&#10;                        screenByWidth: function(){&#10;                            return 'lg';&#10;                        },&#10;                        items: [{&#10;                            itemType: 'group',&#10;                            colCount: 4,&#10;                            items: [{&#10;                                colSpan: 4,&#10;                                dataField: 'location',&#10;                                editorType: 'dxSelectBox',&#10;                                editorOptions: {&#10;                                    dataSource: selectBoxData,&#10;                                    noDataText: loading,&#10;                                    placeholder: '',&#10;                                    displayExpr: 'City',&#10;                                    valueExpr:'ID',&#10;                                    height: 30&#10;                                },&#10;                                validationRules: [{&#10;                                    type: 'required',&#10;                                    message: 'Location is required'&#10;                                }]&#10;                            }, {&#10;                                colSpan: 2,&#10;                                dataField: 'checkIn',&#10;                                editorType: 'dxDateBox',&#10;                                editorOptions: {&#10;                                    type: 'date',&#10;                                    min: minDateCheckIn(),&#10;                                    height: 29,&#10;                                    width: '100%'&#10;                                },&#10;                                validationRules: [{&#10;                                    type: 'required',&#10;                                    message: 'Check in is required'&#10;                                }] &#10;                            }, {&#10;                                colSpan: 2,&#10;                                dataField: 'checkOut',&#10;                                editorType: 'dxDateBox',&#10;                                editorOptions: {&#10;                                    type: 'date',&#10;                                    min: minDateCheckOut(),&#10;                                    max: maxDateCheckOut(),&#10;                                    height: 29,&#10;                                    width: '100%'&#10;                                },&#10;                                validationRules: [{&#10;                                    type: 'required',&#10;                                    message: 'Check out is required'&#10;                                }]&#10;                            }, {&#10;                                colSpan: 2,&#10;                                dataField: 'rooms',&#10;                                editorType: 'dxSelectBox',&#10;                                editorOptions: {&#10;                                    dataSource: numberOfRooms,&#10;                                    placeholder: '',&#10;                                    height: 29&#10;                                },&#10;                                validationRules: [{&#10;                                    type: 'required',&#10;                                    message: 'Rooms is required'&#10;                                }]&#10;                            }, {&#10;                                itemType: 'group',&#10;                                colCount: 2,&#10;                                colSpan: 2,&#10;                                items: [{&#10;                                    dataField: 'adults',&#10;                                    editorType: 'dxSelectBox',&#10;                                    editorOptions: {&#10;                                        dataSource: numberOfAdults,&#10;                                        width: 75,&#10;                                        placeholder: '',&#10;                                        height: 29&#10;                                    },&#10;                                    validationRules: [{&#10;                                        type: 'required',&#10;                                        message: 'Adults is required'&#10;                                    }]&#10;                                }, {&#10;                                    dataField: 'children',&#10;                                    editorType: 'dxSelectBox',&#10;                                    editorOptions: {&#10;                                        dataSource: numberOfChildren,&#10;                                        placeholder: '',&#10;                                        height: 29,&#10;                                        width: 75&#10;                                    }&#10;                                }]&#10;                            }]&#10;                        }]&#10;                    }" role="form" style="width: 364px;"><div class="dx-layout-manager dx-widget"><div class="dx-widget dx-collection dx-responsivebox-screen-lg dx-responsivebox" style="width: 100%; height: 100%;"><div class="dx-box-flex dx-box dx-widget dx-visibility-change-handler dx-collection" style="display: flex; flex-direction: row; width: 100%; height: 100%; justify-content: flex-start; align-items: stretch;"><div class="dx-item dx-box-item" style="display: flex; max-width: none; min-width: 0px; flex: 1 1 auto;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-row dx-first-col dx-last-col dx-field-item dx-col-0 dx-field-item-optional"><div class="dx-field-item-content dx-field-item-content-location-bottom"><div class="dx-form-group dx-group-colcount-4"><div class="dx-form-group-content"><div class="dx-layout-manager dx-widget"><div class="dx-widget dx-collection dx-responsivebox-screen-lg dx-responsivebox" style="width: 100%; height: 100%;"><div class="dx-box-flex dx-box dx-widget dx-visibility-change-handler dx-collection" style="display: flex; flex-direction: column; width: 100%; height: 100%; justify-content: flex-start; align-items: stretch;"><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-row dx-first-col dx-last-col dx-field-item dx-col-0 dx-field-item-required dx-flex-layout dx-label-v-align"><label class="dx-field-item-label dx-field-item-label-location-top" for="dx_dx-7ad6e4d3-7271-31d7-460d-caa3983db356_location"><span class="dx-field-item-label-content" style="width: 53px;"><span class="dx-field-item-label-text">Location</span></span></label><div class="dx-field-item-content dx-field-item-content-location-bottom"><div class="dx-selectbox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-dropdowneditor-button-visible dx-dropdowneditor dx-dropdowneditor-field-clickable dx-validator dx-visibility-change-handler" style="height: 30px;"><div class="dx-dropdowneditor-input-wrapper dx-selectbox-container"><input type="hidden" name="location" value="1" disabled="disabled" data-disabled="true" /><div class="dx-texteditor-container"><input autocomplete="off" id="__hidden-bag-dx_dx-7ad6e4d3-7271-31d7-460d-caa3983db356_location" class="dx-texteditor-input" aria-haspopup="true" aria-autocomplete="list" type="text" readonly="" spellcheck="false" tabindex="0" role="combobox" aria-expanded="false" aria-required="true" style="min-height: 0px;" disabled="disabled" data-disabled="true" /><div data-dx_placeholder="" class="dx-placeholder dx-state-invisible"></div><div class="dx-texteditor-buttons-container"><div class="dx-dropdowneditor-button dx-button-normal dx-button-mode-contained dx-widget" role="button"><div class="dx-button-content"><div class="dx-dropdowneditor-icon"></div></div></div></div></div></div><div class="dx-dropdowneditor-overlay dx-overlay dx-popup dx-widget dx-visibility-change-handler dx-selectbox-popup dx-state-invisible"><div class="dx-overlay-content dx-popup-normal dx-popup-draggable dx-resizable dx-state-invisible" style="max-height: 306.5px; width: 362px; height: auto; z-index: 1501; margin: 0px; left: 0px; top: 0px; transform: translate(236px, 200px); transition: none 0s ease 0s; visibility: visible; opacity: 0;" aria-hidden="true"><div class="dx-popup-content" id="__hidden-bag-dx-151ffbe3-b2c7-1f6c-f153-a52e39584838" style="height: 305.5px;"><div id="__hidden-bag-dx-17397796-77e3-1d43-ad6d-1cd7c6aaebe5" class="dx-scrollable dx-scrollview dx-visibility-change-handler dx-scrollable-vertical dx-scrollable-simulated dx-scrollable-customizable-scrollbars dx-list dx-widget dx-collection" role="listbox" aria-activedescendant="dx-f921558e-f309-2740-5615-5dac48e7a43c"><div class="dx-scrollable-wrapper"><div class="dx-scrollable-container" style="touch-action: pan-x;"><div class="dx-scrollable-content" style="left: 0px; top: 0px; transform: none;"><div class="dx-scrollview-top-pocket"><div class="dx-scrollview-pull-down" style="display: none;"><div class="dx-scrollview-pull-down-image"></div><div class="dx-scrollview-pull-down-indicator"><div class="dx-loadindicator dx-widget"><div class="dx-loadindicator-wrapper"><div class="dx-loadindicator-content"><div class="dx-loadindicator-icon"><div class="dx-loadindicator-segment dx-loadindicator-segment7"></div><div class="dx-loadindicator-segment dx-loadindicator-segment6"></div><div class="dx-loadindicator-segment dx-loadindicator-segment5"></div><div class="dx-loadindicator-segment dx-loadindicator-segment4"></div><div class="dx-loadindicator-segment dx-loadindicator-segment3"></div><div class="dx-loadindicator-segment dx-loadindicator-segment2"></div><div class="dx-loadindicator-segment dx-loadindicator-segment1"></div><div class="dx-loadindicator-segment dx-loadindicator-segment0"></div></div></div></div></div></div><div class="dx-scrollview-pull-down-text"><div class="dx-scrollview-pull-down-text-visible">Pull down to refresh...</div><div>Release to refresh...</div><div>Refreshing...</div></div></div></div><div class="dx-scrollview-content"><div class="dx-item dx-list-item dx-list-item-selected" role="option" aria-selected="true"><div class="dx-item-content dx-list-item-content">Los Angeles</div></div><div class="dx-item dx-list-item" role="option" aria-selected="false"><div class="dx-item-content dx-list-item-content">San Francisco</div></div><div class="dx-item dx-list-item" role="option" aria-selected="false"><div class="dx-item-content dx-list-item-content">Las Vegas</div></div><div class="dx-item dx-list-item" role="option" aria-selected="false"><div class="dx-item-content dx-list-item-content">Honolulu</div></div><div class="dx-item dx-list-item" role="option" aria-selected="false"><div class="dx-item-content dx-list-item-content">New York</div></div><div class="dx-item dx-list-item" role="option" aria-selected="false"><div class="dx-item-content dx-list-item-content">Nassau</div></div><div class="dx-item dx-list-item" role="option" aria-selected="false"><div class="dx-item-content dx-list-item-content">Paris</div></div><div class="dx-item dx-list-item" role="option" aria-selected="false"><div class="dx-item-content dx-list-item-content">London</div></div><div class="dx-item dx-list-item" role="option" aria-selected="false"><div class="dx-item-content dx-list-item-content">Rome</div></div><div class="dx-item dx-list-item" role="option" aria-selected="false"><div class="dx-item-content dx-list-item-content">Hamburg</div></div></div><div class="dx-scrollview-bottom-pocket"><div class="dx-scrollview-scrollbottom" style="display: none;"><div class="dx-scrollview-scrollbottom-indicator"><div class="dx-loadindicator dx-widget"><div class="dx-loadindicator-wrapper"><div class="dx-loadindicator-content"><div class="dx-loadindicator-icon"><div class="dx-loadindicator-segment dx-loadindicator-segment7"></div><div class="dx-loadindicator-segment dx-loadindicator-segment6"></div><div class="dx-loadindicator-segment dx-loadindicator-segment5"></div><div class="dx-loadindicator-segment dx-loadindicator-segment4"></div><div class="dx-loadindicator-segment dx-loadindicator-segment3"></div><div class="dx-loadindicator-segment dx-loadindicator-segment2"></div><div class="dx-loadindicator-segment dx-loadindicator-segment1"></div><div class="dx-loadindicator-segment dx-loadindicator-segment0"></div></div></div></div></div></div><div class="dx-scrollview-scrollbottom-text">Loading...</div></div></div></div><div class="dx-scrollable-scrollbar dx-widget dx-scrollbar-vertical dx-scrollbar-hoverable" style=""><div class="dx-scrollable-scroll dx-state-invisible" style="height: 284px; transform: translate(0px, 0px);"><div class="dx-scrollable-scroll-content"></div></div></div></div></div><div class="dx-scrollview-loadpanel dx-overlay dx-widget dx-state-invisible dx-visibility-change-handler dx-loadpanel"><div class="dx-overlay-content" aria-hidden="true" style="width: 222px; height: 90px;"></div></div></div></div></div></div></div></div></div></div></div><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content dx-box-flex dx-box dx-widget dx-visibility-change-handler dx-collection" style="display: flex; flex-direction: row; justify-content: flex-start; align-items: stretch; width: auto; height: auto; flex-basis: 0px; flex-grow: 1;"><div class="dx-item dx-box-item" style="display: flex; min-width: auto; flex: 2 1 0px;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-col dx-field-item dx-col-0 dx-field-item-required dx-flex-layout dx-label-v-align"><label class="dx-field-item-label dx-field-item-label-location-top" for="dx_dx-7ad6e4d3-7271-31d7-460d-caa3983db356_checkIn"><span class="dx-field-item-label-content" style="width: 53px;"><span class="dx-field-item-label-text">Check In</span></span></label><div class="dx-field-item-content dx-field-item-content-location-bottom"><div class="dx-datebox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-visibility-change-handler dx-dropdowneditor-button-visible dx-dropdowneditor dx-datebox-date dx-datebox-calendar dx-validator" style="width: 100%; height: 29px;"><div class="dx-dropdowneditor-input-wrapper"><input type="hidden" name="checkIn" value="2021-03-20" disabled="disabled" data-disabled="true" /><div class="dx-texteditor-container"><input autocomplete="off" id="__hidden-bag-dx_dx-7ad6e4d3-7271-31d7-460d-caa3983db356_checkIn" class="dx-texteditor-input" aria-haspopup="true" aria-autocomplete="list" type="text" spellcheck="false" tabindex="0" role="combobox" style="min-height: 0px;" aria-expanded="false" aria-required="true" disabled="disabled" data-disabled="true" /><div data-dx_placeholder="" class="dx-placeholder dx-state-invisible"></div><div class="dx-texteditor-buttons-container"><div class="dx-dropdowneditor-button dx-button-normal dx-button-mode-contained dx-widget" role="button"><div class="dx-button-content"><div class="dx-dropdowneditor-icon"></div></div></div></div></div></div></div></div></div></div></div><div class="dx-item dx-box-item" style="display: flex; min-width: auto; flex: 2 1 0px;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-last-col dx-field-item dx-col-2 dx-field-item-required dx-flex-layout dx-label-v-align"><label class="dx-field-item-label dx-field-item-label-location-top" for="dx_dx-7ad6e4d3-7271-31d7-460d-caa3983db356_checkOut"><span class="dx-field-item-label-content" style="width: 65px;"><span class="dx-field-item-label-text">Check Out</span></span></label><div class="dx-field-item-content dx-field-item-content-location-bottom"><div class="dx-datebox dx-textbox dx-texteditor dx-widget dx-visibility-change-handler dx-dropdowneditor-button-visible dx-dropdowneditor dx-validator dx-editor-outlined dx-datebox-date dx-datebox-calendar" style="width: 100%; height: 29px;"><div class="dx-dropdowneditor-input-wrapper"><input type="hidden" name="checkOut" value="2021-03-21" disabled="disabled" data-disabled="true" /><div class="dx-texteditor-container"><input autocomplete="off" id="__hidden-bag-dx_dx-7ad6e4d3-7271-31d7-460d-caa3983db356_checkOut" class="dx-texteditor-input" aria-haspopup="true" aria-autocomplete="list" type="text" spellcheck="false" tabindex="0" role="combobox" style="min-height: 0px;" aria-expanded="false" disabled="disabled" data-disabled="true" /><div data-dx_placeholder="" class="dx-placeholder dx-state-invisible"></div><div class="dx-texteditor-buttons-container"><div class="dx-dropdowneditor-button dx-button-normal dx-button-mode-contained dx-widget" role="button"><div class="dx-button-content"><div class="dx-dropdowneditor-icon"></div></div></div></div></div></div></div></div></div></div></div></div></div><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content dx-box-flex dx-box dx-widget dx-visibility-change-handler dx-collection" style="display: flex; flex-direction: row; justify-content: flex-start; align-items: stretch; width: auto; height: auto; flex-basis: 0px; flex-grow: 1;"><div class="dx-item dx-box-item" style="display: flex; min-width: auto; flex: 2 1 0px;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-col dx-field-item dx-col-0 dx-field-item-required dx-flex-layout dx-label-v-align"><label class="dx-field-item-label dx-field-item-label-location-top" for="dx_dx-7ad6e4d3-7271-31d7-460d-caa3983db356_rooms"><span class="dx-field-item-label-content" style="width: 53px;"><span class="dx-field-item-label-text">Rooms</span></span></label><div class="dx-field-item-content dx-field-item-content-location-bottom"><div class="dx-selectbox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-dropdowneditor-button-visible dx-dropdowneditor dx-dropdowneditor-field-clickable dx-validator dx-visibility-change-handler" style="height: 29px;"><div class="dx-dropdowneditor-input-wrapper dx-selectbox-container"><input type="hidden" name="rooms" value="1" disabled="disabled" data-disabled="true" /><div class="dx-texteditor-container"><input autocomplete="off" id="__hidden-bag-dx_dx-7ad6e4d3-7271-31d7-460d-caa3983db356_rooms" class="dx-texteditor-input" aria-haspopup="true" aria-autocomplete="list" type="text" readonly="" spellcheck="false" tabindex="0" role="combobox" aria-expanded="false" aria-required="true" style="min-height: 0px;" disabled="disabled" data-disabled="true" /><div data-dx_placeholder="" class="dx-placeholder dx-state-invisible"></div><div class="dx-texteditor-buttons-container"><div class="dx-dropdowneditor-button dx-button-normal dx-button-mode-contained dx-widget" role="button"><div class="dx-button-content"><div class="dx-dropdowneditor-icon"></div></div></div></div></div></div></div></div></div></div></div><div class="dx-item dx-box-item" style="display: flex; min-width: auto; flex: 2 1 0px;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-last-col dx-field-item dx-col-2 dx-field-item-optional"><div class="dx-field-item-content dx-field-item-content-location-bottom"><div class="dx-form-group dx-group-colcount-2"><div class="dx-form-group-content"><div class="dx-layout-manager dx-widget"><div class="dx-widget dx-collection dx-responsivebox-screen-lg dx-responsivebox" style="width: 100%; height: 100%;"><div class="dx-box-flex dx-box dx-widget dx-visibility-change-handler dx-collection" style="display: flex; flex-direction: column; width: 100%; height: 100%; justify-content: flex-start; align-items: stretch;"><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content dx-box-flex dx-box dx-widget dx-visibility-change-handler dx-collection" style="display: flex; flex-direction: row; justify-content: flex-start; align-items: stretch; width: auto; height: auto; flex-basis: 0px; flex-grow: 1;"><div class="dx-item dx-box-item" style="display: flex; min-width: auto; flex: 1 1 0px;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-row dx-first-col dx-field-item dx-col-0 dx-field-item-required dx-flex-layout dx-label-v-align"><label class="dx-field-item-label dx-field-item-label-location-top" for="dx_dx-7ad6e4d3-7271-31d7-460d-caa3983db356_adults"><span class="dx-field-item-label-content" style="width: 53px;"><span class="dx-field-item-label-text">Adults</span></span></label><div class="dx-field-item-content dx-field-item-content-location-bottom"><div class="dx-selectbox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-dropdowneditor-button-visible dx-dropdowneditor dx-dropdowneditor-field-clickable dx-validator dx-visibility-change-handler" style="width: 75px; height: 29px;"><div class="dx-dropdowneditor-input-wrapper dx-selectbox-container"><input type="hidden" name="adults" value="1" disabled="disabled" data-disabled="true" /><div class="dx-texteditor-container"><input autocomplete="off" id="__hidden-bag-dx_dx-7ad6e4d3-7271-31d7-460d-caa3983db356_adults" class="dx-texteditor-input" aria-haspopup="true" aria-autocomplete="list" type="text" readonly="" spellcheck="false" tabindex="0" role="combobox" aria-expanded="false" aria-required="true" style="min-height: 0px;" disabled="disabled" data-disabled="true" /><div data-dx_placeholder="" class="dx-placeholder dx-state-invisible"></div><div class="dx-texteditor-buttons-container"><div class="dx-dropdowneditor-button dx-button-normal dx-button-mode-contained dx-widget" role="button"><div class="dx-button-content"><div class="dx-dropdowneditor-icon"></div></div></div></div></div></div></div></div></div></div></div><div class="dx-item dx-box-item" style="display: flex; min-width: auto; flex: 1 1 0px;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-row dx-last-col dx-field-item dx-col-1 dx-field-item-optional dx-flex-layout dx-label-v-align"><label class="dx-field-item-label dx-field-item-label-location-top" for="dx_dx-7ad6e4d3-7271-31d7-460d-caa3983db356_children"><span class="dx-field-item-label-content" style="width: 51px;"><span class="dx-field-item-label-text">Children</span></span></label><div class="dx-field-item-content dx-field-item-content-location-bottom"><div class="dx-selectbox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-texteditor-empty dx-dropdowneditor-button-visible dx-dropdowneditor dx-dropdowneditor-field-clickable" style="width: 75px; height: 29px;"><div class="dx-dropdowneditor-input-wrapper dx-selectbox-container"><input type="hidden" name="children" value="" disabled="disabled" data-disabled="true" /><div class="dx-texteditor-container"><input autocomplete="off" id="__hidden-bag-dx_dx-7ad6e4d3-7271-31d7-460d-caa3983db356_children" class="dx-texteditor-input" aria-haspopup="true" aria-autocomplete="list" type="text" readonly="" spellcheck="false" tabindex="0" role="combobox" aria-expanded="false" aria-required="false" style="min-height: 0px;" disabled="disabled" data-disabled="true" /><div data-dx_placeholder="" class="dx-placeholder"></div><div class="dx-texteditor-buttons-container"><div class="dx-dropdowneditor-button dx-button-normal dx-button-mode-contained dx-widget" role="button"><div class="dx-button-content"><div class="dx-dropdowneditor-icon"></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><div class="dx-form-validation-summary dx-validationsummary dx-widget dx-collection"></div></div>
+                    <div class="button-search">
+                        <div class="search main-color white-text dx-button dx-button-normal dx-button-mode-contained dx-widget dx-button-has-text" data-bind="dxButton: {&#10;                                    text:'SEARCH',&#10;                                    onClick: searchClick,&#10;                                    width: 360,&#10;                                    height: 52&#10;                                }" role="button" aria-label="SEARCH" tabindex="0" style="width: 360px; height: 52px;"><div class="dx-button-content"><span class="dx-button-text">SEARCH</span></div></div>
+                    </div>
+                </div>
+                <div class="hotel-powered">
+                    <div id="__hidden-bag-gross-text"></div>
+                    <p id="__hidden-bag-small-text">powered by DevExtreme</p>
+                </div>
+            </div>
+        </div>
+        <div class="external-block-offer" data-bind="visible: offers().length &gt; 0">
+            <div class="content">
+                <div class="offers" data-bind="foreach: offers, css: { one: offers().length == 1, two: offers().length == 2 }">
+                    <div class="first-offer offer" data-bind="attr: { class: name + '-offer offer'}">
+                        <div class="label-offer">
+                            <div class="closeOffer" data-bind="click: $parent.closeOffer">
+                            </div>
+                            <div data-bind="attr: { class: name + '-label label' }" class="first-label label"></div>
+                        </div>
+                    </div>
+                
+                    <div class="second-offer offer" data-bind="attr: { class: name + '-offer offer'}">
+                        <div class="label-offer">
+                            <div class="closeOffer" data-bind="click: $parent.closeOffer">
+                            </div>
+                            <div data-bind="attr: { class: name + '-label label' }" class="second-label label"></div>
+                        </div>
+                    </div>
+                
+                    <div class="third-offer offer" data-bind="attr: { class: name + '-offer offer'}">
+                        <div class="label-offer">
+                            <div class="closeOffer" data-bind="click: $parent.closeOffer">
+                            </div>
+                            <div data-bind="attr: { class: name + '-label label' }" class="third-label label"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="label-gallery">
+                SPECIAL OFFERS
+            </div>
+            <div class="gallery-container dx-gallery dx-widget dx-visibility-change-handler dx-collection dx-swipeable" data-bind="dxGallery: {&#10;                dataSource: galleryData,&#10;                selectedIndex: indexImg,&#10;                height: 440,&#10;                width: 920,&#10;                noDataText: searchData.loading,&#10;                showIndicator: false,&#10;                onItemClick: specialOffers &#10;            }" role="listbox" aria-label="gallery" tabindex="0" aria-activedescendant="dx-5f46abf8-4c4a-a9f7-3d58-718576db649a" style="width: 920px; height: 440px;"><div class="dx-gallery-wrapper"><div class="dx-gallery-container" style="transform: translate(0px, 0px);"><div class="dx-item dx-gallery-item dx-item-selected dx-gallery-item-selected dx-state-focused" role="option" aria-selected="true" id="__hidden-bag-dx-5f46abf8-4c4a-a9f7-3d58-718576db649a" style="width: 100%; margin-left: 0%;"><div data-options="dxTemplate: { name: 'item' }" class="special-offer-item dx-template-wrapper dx-item-content dx-gallery-item-content">
+                    <div class="hotel">
+                        <div class="name" data-bind="text: name">Downtown Inn</div>
+                        <div data-bind="text: location">Los Angeles, USA</div>
+                        <div class="price" data-bind="text: price">$109</div>
+                    </div>
+                    <img data-bind="attr: { src: src }" src="Content/Cities/LA.png" /><br />
+                </div></div><div class="dx-item dx-gallery-item dx-gallery-item-invisible" role="option" aria-selected="false" style="width: 100%;"><div data-options="dxTemplate: { name: 'item' }" class="special-offer-item dx-template-wrapper dx-item-content dx-gallery-item-content">
+                    <div class="hotel">
+                        <div class="name" data-bind="text: name">The Bay Hotel</div>
+                        <div data-bind="text: location">San Francisco, USA</div>
+                        <div class="price" data-bind="text: price">$111</div>
+                    </div>
+                    <img data-bind="attr: { src: src }" src="Content/Cities/SF.jpg" /><br />
+                </div></div><div class="dx-item dx-gallery-item dx-gallery-item-invisible" role="option" aria-selected="false" style="width: 100%;"><div data-options="dxTemplate: { name: 'item' }" class="special-offer-item dx-template-wrapper dx-item-content dx-gallery-item-content">
+                    <div class="hotel">
+                        <div class="name" data-bind="text: name">Grand Gold Resort</div>
+                        <div data-bind="text: location">Las Vegas, USA</div>
+                        <div class="price" data-bind="text: price">$29</div>
+                    </div>
+                    <img data-bind="attr: { src: src }" src="Content/Cities/LV.jpg" /><br />
+                </div></div><div class="dx-item dx-gallery-item dx-gallery-item-invisible" role="option" aria-selected="false" style="width: 100%;"><div data-options="dxTemplate: { name: 'item' }" class="special-offer-item dx-template-wrapper dx-item-content dx-gallery-item-content">
+                    <div class="hotel">
+                        <div class="name" data-bind="text: name">Honolulu Inn</div>
+                        <div data-bind="text: location">Honolulu, USA</div>
+                        <div class="price" data-bind="text: price">$99</div>
+                    </div>
+                    <img data-bind="attr: { src: src }" src="Content/Cities/Honolulu.jpg" /><br />
+                </div></div><div class="dx-item dx-gallery-item dx-gallery-item-invisible" role="option" aria-selected="false" style="width: 100%;"><div data-options="dxTemplate: { name: 'item' }" class="special-offer-item dx-template-wrapper dx-item-content dx-gallery-item-content">
+                    <div class="hotel">
+                        <div class="name" data-bind="text: name">SoHo Inn</div>
+                        <div data-bind="text: location">New York, USA</div>
+                        <div class="price" data-bind="text: price">$111</div>
+                    </div>
+                    <img data-bind="attr: { src: src }" src="Content/Cities/NY.png" /><br />
+                </div></div><div class="dx-item dx-gallery-item dx-gallery-item-invisible" role="option" aria-selected="false" style="width: 100%;"><div data-options="dxTemplate: { name: 'item' }" class="special-offer-item dx-template-wrapper dx-item-content dx-gallery-item-content">
+                    <div class="hotel">
+                        <div class="name" data-bind="text: name">Reef Resort</div>
+                        <div data-bind="text: location">Nassau, Bahamas</div>
+                        <div class="price" data-bind="text: price">$249</div>
+                    </div>
+                    <img data-bind="attr: { src: src }" src="Content/Cities/Nassau.jpg" /><br />
+                </div></div><div class="dx-item dx-gallery-item dx-gallery-item-invisible" role="option" aria-selected="false" style="width: 100%;"><div data-options="dxTemplate: { name: 'item' }" class="special-offer-item dx-template-wrapper dx-item-content dx-gallery-item-content">
+                    <div class="hotel">
+                        <div class="name" data-bind="text: name">Hotel de Paris</div>
+                        <div data-bind="text: location">Paris, France</div>
+                        <div class="price" data-bind="text: price">$110</div>
+                    </div>
+                    <img data-bind="attr: { src: src }" src="Content/Cities/Paris.png" /><br />
+                </div></div><div class="dx-item dx-gallery-item dx-gallery-item-invisible" role="option" aria-selected="false" style="width: 100%;"><div data-options="dxTemplate: { name: 'item' }" class="special-offer-item dx-template-wrapper dx-item-content dx-gallery-item-content">
+                    <div class="hotel">
+                        <div class="name" data-bind="text: name">Metropolis Hotel</div>
+                        <div data-bind="text: location">London, United Kingdom</div>
+                        <div class="price" data-bind="text: price">$110</div>
+                    </div>
+                    <img data-bind="attr: { src: src }" src="Content/Cities/London.png" /><br />
+                </div></div><div class="dx-item dx-gallery-item dx-gallery-item-invisible" role="option" aria-selected="false" style="width: 100%;"><div data-options="dxTemplate: { name: 'item' }" class="special-offer-item dx-template-wrapper dx-item-content dx-gallery-item-content">
+                    <div class="hotel">
+                        <div class="name" data-bind="text: name">Hotel Roma</div>
+                        <div data-bind="text: location">Rome, Italy</div>
+                        <div class="price" data-bind="text: price">$129</div>
+                    </div>
+                    <img data-bind="attr: { src: src }" src="Content/Cities/Rome.jpg" /><br />
+                </div></div><div class="dx-item dx-gallery-item dx-gallery-item-invisible" role="option" aria-selected="false" style="width: 100%;"><div data-options="dxTemplate: { name: 'item' }" class="special-offer-item dx-template-wrapper dx-item-content dx-gallery-item-content">
+                    <div class="hotel">
+                        <div class="name" data-bind="text: name">Hamburg Suites</div>
+                        <div data-bind="text: location">Hamburg, Germany</div>
+                        <div class="price" data-bind="text: price">$199</div>
+                    </div>
+                    <img data-bind="attr: { src: src }" src="Content/Cities/Hamburg.jpg" /><br />
+                </div></div></div></div></div>
+        </div>
+        <div class="external-minigallary">
+            <div class="mini-gallery" data-bind="foreach: galleryData, css: { 'mini-gallery-to-left': transformSlider() }">
+                <div class="external-padding">
+                    <div data-bind=" css: { 'current-img': index === $parent.indexImg() }" class="current-img">
+                        <div data-bind=" css: { 'white-pading': index === $parent.indexImg() }" class="white-pading">
+                        </div>
+                    </div>
+                    <img class="small-image" data-bind=" attr: { src: src }, click: $parent.changePicture" src="Content/Cities/LA.png" />
+                </div>
+            
+                <div class="external-padding">
+                    <div data-bind=" css: { 'current-img': index === $parent.indexImg() }">
+                        <div data-bind=" css: { 'white-pading': index === $parent.indexImg() }">
+                        </div>
+                    </div>
+                    <img class="small-image" data-bind=" attr: { src: src }, click: $parent.changePicture" src="Content/Cities/SF.jpg" />
+                </div>
+            
+                <div class="external-padding">
+                    <div data-bind=" css: { 'current-img': index === $parent.indexImg() }">
+                        <div data-bind=" css: { 'white-pading': index === $parent.indexImg() }">
+                        </div>
+                    </div>
+                    <img class="small-image" data-bind=" attr: { src: src }, click: $parent.changePicture" src="Content/Cities/LV.jpg" />
+                </div>
+            
+                <div class="external-padding">
+                    <div data-bind=" css: { 'current-img': index === $parent.indexImg() }">
+                        <div data-bind=" css: { 'white-pading': index === $parent.indexImg() }">
+                        </div>
+                    </div>
+                    <img class="small-image" data-bind=" attr: { src: src }, click: $parent.changePicture" src="Content/Cities/Honolulu.jpg" />
+                </div>
+            
+                <div class="external-padding">
+                    <div data-bind=" css: { 'current-img': index === $parent.indexImg() }">
+                        <div data-bind=" css: { 'white-pading': index === $parent.indexImg() }">
+                        </div>
+                    </div>
+                    <img class="small-image" data-bind=" attr: { src: src }, click: $parent.changePicture" src="Content/Cities/NY.png" />
+                </div>
+            
+                <div class="external-padding">
+                    <div data-bind=" css: { 'current-img': index === $parent.indexImg() }">
+                        <div data-bind=" css: { 'white-pading': index === $parent.indexImg() }">
+                        </div>
+                    </div>
+                    <img class="small-image" data-bind=" attr: { src: src }, click: $parent.changePicture" src="Content/Cities/Nassau.jpg" />
+                </div>
+            
+                <div class="external-padding">
+                    <div data-bind=" css: { 'current-img': index === $parent.indexImg() }">
+                        <div data-bind=" css: { 'white-pading': index === $parent.indexImg() }">
+                        </div>
+                    </div>
+                    <img class="small-image" data-bind=" attr: { src: src }, click: $parent.changePicture" src="Content/Cities/Paris.png" />
+                </div>
+            
+                <div class="external-padding">
+                    <div data-bind=" css: { 'current-img': index === $parent.indexImg() }">
+                        <div data-bind=" css: { 'white-pading': index === $parent.indexImg() }">
+                        </div>
+                    </div>
+                    <img class="small-image" data-bind=" attr: { src: src }, click: $parent.changePicture" src="Content/Cities/London.png" />
+                </div>
+            
+                <div class="external-padding">
+                    <div data-bind=" css: { 'current-img': index === $parent.indexImg() }">
+                        <div data-bind=" css: { 'white-pading': index === $parent.indexImg() }">
+                        </div>
+                    </div>
+                    <img class="small-image" data-bind=" attr: { src: src }, click: $parent.changePicture" src="Content/Cities/Rome.jpg" />
+                </div>
+            
+                <div class="external-padding">
+                    <div data-bind=" css: { 'current-img': index === $parent.indexImg() }">
+                        <div data-bind=" css: { 'white-pading': index === $parent.indexImg() }">
+                        </div>
+                    </div>
+                    <img class="small-image" data-bind=" attr: { src: src }, click: $parent.changePicture" src="Content/Cities/Hamburg.jpg" />
+                </div>
+            </div>
+        </div>
+        <div class="external-for-low-parts">
+            <div class="parts">
+                <div class="first-part">
+                    <strong>Getting Started Today</strong>
+                    <p>
+                        DevExtreme Subscription includes
+                        65+ High Performance HTML5 JavaScript Widgets.
+                    </p>
+                    <a href="https://js.devexpress.com/Download/">Download your free 30-day trial</a>
+                </div>
+                <div class="second-part">
+                    <strong>We Are Here to Help</strong>
+                    <p>
+                        Tell us how we can help you build the next
+                        great JavaScript Mobile or Web App.
+                    </p>
+                    <a href="mailto:info@devexpress.com">info@devexpress.com</a>
+                </div>
+                <div>
+                    <strong>The following DevExtreme Widgets<br />were used on this page:</strong>
+                    <p>
+                        dxGallery<br />
+                        dxPopup<br />
+                        dxForm<br />
+                        dxAccordion<br />
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div><div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content dx-content-content dx-transition-inner-wrapper dx-inactive-view" data-dx-target-placeholder-id="content">
+        <div class="external-search-data">
+            <div class="search-data content">
+                <div class="extrnal-on-map">
+                    <div class="map dx-map dx-native-click dx-widget dx-visibility-change-handler" data-bind="dxMap: {&#10;                        provider: 'bing',&#10;                        center: cityOnMap(),&#10;                        width: 237,&#10;                        height: 89,&#10;                        zoom: 11&#10;                    }" tabindex="0" style="width: 237px; height: 89px;"><div class="dx-map-container"><div class="MicrosoftMap" style="position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;"><div style="position: absolute; overflow: hidden; width: 100%; height: 100%; top: 0px; left: 0px;"><div class="ms-composite" tabindex="-1" dir="ltr" style="z-index: 0; background-color: rgb(243, 242, 237); opacity: 1; position: absolute; top: 0px; left: 0px;"><canvas id="__hidden-bag-Microsoft.Maps.Imagery.RoadSceneWithoutLabels" width="237" height="89" style="z-index: 0; position: absolute; left: 0px; opacity: 1; transform-origin: left top; zoom: 1; width: 237px; height: 89px; transform: matrix(1, 0, 0, 1, 0, 0);"></canvas><div tabindex="0" id="__hidden-bag-mapFocus" aria-label="Mapas de Bing - Interactúa para ver más" style="top: 1px; left: 1px; z-index: 25100; pointer-events: none; position: absolute; width: 235px; height: 87px;"></div><canvas style="z-index: 25000; position: absolute; opacity: 0; width: 237px; height: 89px;" width="237" height="89"></canvas><canvas id="__hidden-bag-labelCanvasId" class="labelCanvas" width="593" height="223" style="outline: none; position: absolute; z-index: 20000; width: 593px; height: 223px; top: -67px; left: -178px; transform: translate(0px, 0px); display: block;"></canvas></div></div><div style="position: absolute; overflow: hidden; width: 100%; height: 100%; top: 0px; left: 0px; pointer-events: none; transform: scale(1); z-index: 100;"><div style="position: absolute; width: 100%; height: 100%; pointer-events: none;"><div id="__hidden-bag-MicrosoftNav" class="NavBar_Container Light" style="position: absolute; inset: 0px 0px auto auto;"><div class="NavBar_MapTypeButtonContainerWrapper" style="display: none;"><div class="NavBar_MapTypeButtonContainer NavBar_MapTypeButtonHeight NavBar_Delay withBackground" id="__hidden-bag-MapStyleSelector" tabindex="0" title="Tipo de mapa actual: Calles - Vistas aéreas y más..." role="button" aria-expanded="false"><div id="__hidden-bag-NavBar_MapTypeIcon" class="NavBar_MapTypeButtonIcon NavBar_MapTypeButtonHeight selectorIconRoad"></div><div id="__hidden-bag-NavBar_MapTypeText" class="NavBar_MapTypeButtonText NavBar_MapTypeButtonHeight">Calles</div><div class="NavBar_MapTypeButtonDropDownIcon NavBar_MapTypeButtonHeight selectorIconDropDown"></div></div></div><div id="__hidden-bag-RadialMenu" class="NavBar_DropDown menu" role="listbox" aria-multiselectable="true" aria-label="Vistas aéreas y más..."><div class="slot road selected" tabindex="0" role="option" aria-selected="true"><div class="mapTypeIcon"></div><div class="pie-label labelStyle">Calles</div><div class="pie-label-description labelStyleDescription">Un mapa de carreteras estándar</div></div><div class="slot aerial" tabindex="0" role="option" aria-selected="false"><div class="mapTypeIcon"></div><div class="pie-label labelStyle">Aérea</div><div class="pie-label-description labelStyleDescription">Una vista detallada desde arriba</div></div><div class="slot birdseye" tabindex="0" role="option" aria-selected="false"><div class="mapTypeIcon"></div><div class="pie-label labelStyle">Vista de pájaro</div><div class="pie-label-description labelStyleDescription">Un mejor ángulo de fotografía aérea</div></div><div class="switchSlot labelToggle" for="navbarLabelToggleInput" tabindex="0" role="checkbox" aria-checked="true" aria-label="" title="Activar o desactivar etiquetas" aria-selected="false"><div class="labelToggle_Container labelStyle"><input id="__hidden-bag-navbarLabelToggleInput" type="checkbox" class="labelToggle_Input" checked="" tabindex="-1" disabled="disabled" data-disabled="true" /><label class="labelStyleSwitch" title="Etiquetas">Etiquetas</label><label class="labelToggle_label" helper="[object Object]" role="button" aria-label="Etiquetas"></label></div></div></div><div class="birdseyeV2InfoExitControl be2LabelsEnabled" style="display: none;"><div class="birdseyeV2InfoExitControl left"><div class="birdseyeV2InfoExitControl left bottom"><div class="birdseyeV2Geochain"></div></div></div><div class="birdseyeV2InfoExitControl right"><a id="__hidden-bag-BirdseyeV2ExitButton" class="NavBar_Button birdseyeV2Exit" title="Salir de vista de pájaro" href="#" role="button"><div class="NavButton_Icon"></div></a><div class="be2LabelToggleContainer"><div class="be2LabelsTag">Etiquetas</div><div class="be2LabelToggle switchSlot labelToggle" for="be2ToggleInput"><div class="labelToggle_Container labelStyle"><input id="__hidden-bag-be2ToggleInput" type="checkbox" class="labelToggle_Input" checked="" tabindex="-1" disabled="disabled" data-disabled="true" /><label class="labelToggle_label" role="button" aria-label="Etiquetas"></label></div></div></div></div></div><div class="bm_LocateMeControl" style="display: none;"><a id="__hidden-bag-LocateMeButton" class="NavBar_Button NavBar_locateMe" title="Obtener mi ubicación" href="#" role="button" style="display: none;"><div class="NavButton_Icon"></div></a></div><div id="__hidden-bag-RotateButtonContainer" class="NavBarButton_Container" style="margin-top: -75.5px; display: none;"><a id="__hidden-bag-RotateLeftButton" class="NavBar_Button NavBar_rotateLeft" title="Girar a la izquierda" href="#" role="button"><div class="NavButton_Icon"></div></a><a id="__hidden-bag-RotateButton" class="NavBar_Button NavBar_rotate NavBar_heading_0D" title="Restablecer orientación" href="#" role="button"><div class="NavButton_Icon"></div></a><a id="__hidden-bag-RotateRightButton" class="NavBar_Button NavBar_rotateRight" title="Girar a la derecha" href="#" role="button"><div class="NavButton_Icon"></div></a></div><a id="__hidden-bag-ZoomInButton" class="NavBar_Button NavBar_zoomIn" title="Acercar" href="#" role="button" aria-label="Nivel actual 11, ampliar" style="display: none;"><div class="NavButton_Icon"></div></a><a id="__hidden-bag-ZoomOutButton" class="NavBar_Button NavBar_zoomOut" title="Alejar" href="#" role="button" aria-label="Nivel actual 11, alejar" style="display: none;"><div class="NavButton_Icon"></div></a></div></div><div class="bm_bottomLeftOverlay" style="position: absolute; left: 5px; bottom: 5px;"><div class="bm_LogoContainer quadrantOverride"><a href="https://www.bing.com/maps?cp=34.05223846435547~-118.24334716796875&amp;lvl=11&amp;style=r&amp;FORM=BMLOGO" title="Bing Maps" target="mc_bingMaps" style="pointer-events: auto"><div id="__hidden-bag-bingLogo" class="bingLogoLight"></div></a></div></div><div class="bm_bottomRightOverlay" style="position: absolute; right: 25px; bottom: 5px;"><div class="CopyrightContainer quadrantOverride"><div id="__hidden-bag-TermsLinkContainer" class="TermsLinkContainer"><a class="ShadowTextDark" href="https://www.microsoft.com/maps/assets/docs/terms.aspx" title="Terms" target="mc_bingMaps" style="pointer-events: auto">Terms</a></div><div class="CopyrightControl" style="max-width: 236px;"><span class="ShadowTextDark"><span class="CopyrightAttributionStyle">© 2021 TomTom, © 2021 Microsoft Corporation</span><a class="copyrightLink ShadowTextDark" style="pointer-events: auto; display: none;"></a></span></div></div></div></div></div></div></div>
+                </div>
+                <div class="site">
+                    <h4 class="city" data-bind="text: location">Los Angeles, CA, USA</h4>
+                    <p class="date days-adults" data-bind="text: resultDate">Sat 20 - Sun 21, Mar 2021</p>
+                    <p class="days-adults" data-bind="text: resultAdults">1 night, 1 room, 1 adult</p>
+                </div>
+            </div>
+        </div>
+        <div class="search-info-hotels">
+            <div class="hotels content">
+                <div class="result-count">
+                    <div class="result-serch">
+                        <p class="text-result">RESULTS</p>
+                        <p class="count" data-bind="text: amountHotel">2 HOTELS</p>
+                    </div>
+                    <div class="search-attributes">
+                        <div class="full-attribute city" data-bind="if: currentCity">
+                            <div class="attribute">
+                                <div class="attribute-name">
+                                    <p data-bind="text:currentCityName">Los Angeles</p>
+                                </div>
+                                <div class="close-attribute">
+                                    <div class="img" data-bind="click: closeCurrentCity, visible:currentCity()"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="full-attribute hotel" data-bind="style: { display: currentHotelName() ? 'inline-block' : 'none' }, css: { marginAttribute: currentHotelName() }" style="display: none;">
+                            <div class="attribute">
+                                <div class="attribute-name">
+                                    <p data-bind="text:currentHotelName"></p>
+                                </div>
+                                <div class="close-attribute">
+                                    <div class="img" data-bind="click: closeCurrentHotelName, visible: currentHotelName()" style="display: none;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="full-attribute stars" data-bind="style: { display: resultStars() ? 'inline-block' : 'none' }, css: { marginAttribute: resultStars() }" style="display: none;">
+                            <div class="attribute">
+                                <div class="attribute-name">
+                                    <p data-bind="text:resultStars"></p>
+                                </div>
+                                <div class="close-attribute">
+                                    <div class="img" data-bind="click: closeResultStars, visible: resultStars()" style="display: none;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="full-attribute customer" data-bind="style: { display: visibleCustomerRating() ? 'inline-block' : 'none' }, css: { marginAttribute: visibleCustomerRating }" style="display: none;">
+                            <div class="attribute">
+                                <div class="attribute-name">
+                                    <p data-bind="text:resultRating"></p>
+                                </div>
+                                <div class="close-attribute">
+                                    <div class="img" data-bind="click:closeCustomerRating, visible: visibleCustomerRating" style="display: none;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="full-attribute range" data-bind="style: { display: visibleRange() ? 'inline-block' : 'none' }, css: { marginAttribute: visibleRange }" style="display: none;">
+                            <div class="attribute">
+                                <div class="attribute-name">
+                                    <p data-bind="text:resultRange">$0-$1000</p>
+                                </div>
+                                <div class="close-attribute">
+                                    <div class="img" data-bind="click: closeRange, visible: visibleRange" style="display: none;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="full-attribute location-rating" data-bind="style: { display: locationRating() ? 'inline-block' : 'none' }, css: { marginAttribute: locationRating() }" style="display: none;">
+                            <div class="attribute">
+                                <div class="attribute-name">
+                                    <p data-bind="text:locationRating"></p>
+                                </div>
+                                <div class="close-attribute">
+                                    <div class="img" data-bind="click: closeLocation, visible: locationRating()" style="display: none;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="current-hotels" data-bind="foreach: currentHotels">
+                    <div class="hotels-data">
+                        <div class="img-adrs-rating">
+                            <div class="name-address">
+                                <div class="info">
+                                    <span class="name-hotel" data-bind="text: name, click: $parent.goToHotel">Downtown Inn</span>
+                                    <br />
+                                    <span class="fullAdrs" data-bind="text: fullAdrs">528 Pico Blvd. Los Angeles, CA, 90012, USA</span>
+                                </div>
+                                <div class="rating">
+                                    <div class="type">
+                                        <div id="__hidden-bag-img"></div>
+                                        <span class="caption">TYPE</span>
+                                        <span class="text" data-bind="text: hotelClass">Diamond</span>
+                                    </div>
+                                    <div class="location">
+                                        <span class="caption">LOCATION</span>
+                                        <span class="text" data-bind="text: locationRating">AA</span>
+                                    </div>
+                                    <div class="rating-text">
+                                        <div id="__hidden-bag-img"></div>
+                                        <span class="caption">RATING   </span>
+                                        <span class="text" data-bind="text: ourRating">4</span>
+                                    </div>
+                                </div>
+                                <div class="rating-container">
+                                    <div class="rating-stars" data-bind="style: { width: 20 * avgRating + '%' }" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="night-button">
+                                <div>
+                                    <p class="rate-number" data-bind="text: nightlyRate">$199</p>
+                                </div>
+                                <div class="caption">per night</div>
+                                <div class="book-it gray-button dx-button dx-button-normal dx-button-mode-contained dx-widget dx-button-has-text" data-bind="dxButton: {&#10;                                    text: 'Book it',&#10;                                    onClick: $parent.goToBooking&#10;                                }" role="button" aria-label="Book it" tabindex="0"><div class="dx-button-content"><span class="dx-button-text">Book it</span></div></div>
+                            </div>
+                            <div class="extenal-on-img">
+                                <img class="img" data-bind="attr: { src: src }" src="Content/Pictures/LA-0.jpg" />
+                            </div>
+                            <p class="hotel-description" data-bind="text: description">In the heart of LA's business district, the Downtown Inn has a welcoming staff and award winning restaurants that remain open 24 hours a day. Use our conference room facilities to conduct meetings and have a drink at our beautiful rooftop bar.</p>
+                        </div>
+                    </div>
+                
+                    <div class="hotels-data">
+                        <div class="img-adrs-rating">
+                            <div class="name-address">
+                                <div class="info">
+                                    <span class="name-hotel" data-bind="text: name, click: $parent.goToHotel">LA Motor Lodge</span>
+                                    <br />
+                                    <span class="fullAdrs" data-bind="text: fullAdrs">5838 West Pico Los Angeles, CA, 90019, USA</span>
+                                </div>
+                                <div class="rating">
+                                    <div class="type">
+                                        <div id="__hidden-bag-img"></div>
+                                        <span class="caption">TYPE</span>
+                                        <span class="text" data-bind="text: hotelClass">Silver</span>
+                                    </div>
+                                    <div class="location">
+                                        <span class="caption">LOCATION</span>
+                                        <span class="text" data-bind="text: locationRating">BBB</span>
+                                    </div>
+                                    <div class="rating-text">
+                                        <div id="__hidden-bag-img"></div>
+                                        <span class="caption">RATING   </span>
+                                        <span class="text" data-bind="text: ourRating">3</span>
+                                    </div>
+                                </div>
+                                <div class="rating-container">
+                                    <div class="rating-stars" data-bind="style: { width: 20 * avgRating + '%' }" style="width: 40%;"></div>
+                                </div>
+                            </div>
+                            <div class="night-button">
+                                <div>
+                                    <p class="rate-number" data-bind="text: nightlyRate">$109</p>
+                                </div>
+                                <div class="caption">per night</div>
+                                <div class="book-it gray-button dx-button dx-button-normal dx-button-mode-contained dx-widget dx-button-has-text" data-bind="dxButton: {&#10;                                    text: 'Book it',&#10;                                    onClick: $parent.goToBooking&#10;                                }" role="button" aria-label="Book it" tabindex="0"><div class="dx-button-content"><span class="dx-button-text">Book it</span></div></div>
+                            </div>
+                            <div class="extenal-on-img">
+                                <img class="img" data-bind="attr: { src: src }" src="Content/Pictures/LA-5.jpg" />
+                            </div>
+                            <p class="hotel-description" data-bind="text: description">For the budget conscious, the LAML offers clean, comfortable rooms so you can wake up refreshed and ready for an exciting day visiting the sites of Los Angeles. We even offer free internet access if you have a computer.  We look forward to your visit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="options-search">
+                    <div class="label-hotel-name label">Search by Hotel Name</div>
+                    <div class="hotel-name">
+                        <div class="list-hotel dx-selectbox dx-textbox dx-texteditor dx-editor-outlined dx-searchbox dx-show-clear-button dx-dropdowneditor-button-visible dx-widget dx-texteditor-empty dx-dropdowneditor dx-dropdowneditor-field-clickable" data-bind="dxSelectBox: {&#10;                            dataSource: hotels,&#10;                            mode: 'search',&#10;                            displayExpr: 'name',&#10;                            placeholder: '',&#10;                            valueExpr: 'name',&#10;                            value: currentHotelName,&#10;                            width: 200,&#10;                            height: 30&#10;                        }" style="width: 200px; height: 30px;"><div class="dx-dropdowneditor-input-wrapper dx-selectbox-container"><input type="hidden" value="" disabled="disabled" data-disabled="true" /><div class="dx-texteditor-container"><div class="dx-icon dx-icon-search"></div><input autocomplete="off" class="dx-texteditor-input" aria-haspopup="true" aria-autocomplete="list" type="text" readonly="" spellcheck="false" tabindex="0" role="combobox" aria-expanded="false" style="min-height: 0px;" disabled="disabled" data-disabled="true" /><div data-dx_placeholder="" class="dx-placeholder"></div><div class="dx-texteditor-buttons-container"><div class="dx-dropdowneditor-button dx-button-normal dx-button-mode-contained dx-widget" role="button"><div class="dx-button-content"><div class="dx-dropdowneditor-icon"></div></div></div><span class="dx-clear-button-area"><span class="dx-icon dx-icon-clear"></span></span></div></div></div></div>
+                    </div>
+                    <div class="label-nightly-rate label">Nightly Rate</div>
+                    <div class="nightly-rate">
+                        <div data-bind="dxRangeSlider: {&#10;                            min: 0,&#10;                            max: 1000,&#10;                            start: rangeStart,&#10;                            end: rangeEnd,&#10;                            width: 172,&#10;                            tooltip: toolRateNightly&#10;                        }" class="dx-rangeslider dx-slider dx-trackbar dx-slider-tooltip-position-top dx-widget dx-visibility-change-handler" style="width: 172px;"><input type="hidden" name="" value="0" disabled="disabled" data-disabled="true" /><input type="hidden" name="" value="1000" disabled="disabled" data-disabled="true" /><div class="dx-trackbar-wrapper dx-slider-wrapper dx-swipeable"><div class="dx-trackbar-container dx-slider-bar"><div class="dx-trackbar-range dx-slider-range dx-slider-range-visible" style="right: 0%; left: 0%;"><div class="dx-widget dx-slider-handle dx-rangeslider-start-handle" role="slider" aria-valuenow="0" aria-describedby="dx-c50d4e4f-e2c1-7349-37a5-2d631e88b226" aria-label="From" tabindex="0" aria-valuemin="0" aria-valuemax="1000"><div class="dx-overlay dx-popup dx-popover dx-widget dx-visibility-change-handler dx-tooltip"><div class="dx-overlay-wrapper dx-popup-wrapper dx-popover-wrapper dx-tooltip-wrapper dx-popover-without-title dx-position-top" data-bind="dxControlsDescendantBindings: true" style="position: absolute; z-index: 1501;"><div class="dx-overlay-content dx-popup-normal dx-resizable" id="__hidden-bag-dx-c50d4e4f-e2c1-7349-37a5-2d631e88b226" role="tooltip" style="width: 34px; height: auto; left: 0px; top: 0px; transform: translate(-12.5px, 4px); transition: all 0s ease 0s; z-index: 1501;"><div class="dx-popover-arrow" style="inset: auto auto 0px 50%; transform: translate(0px, 0px); margin-left: 0px;"></div><div class="dx-popup-content" style="height: auto; min-height: 0px; max-height: none;">$0</div></div></div></div></div><div class="dx-widget dx-slider-handle dx-rangeslider-end-handle" role="slider" aria-valuenow="1000" aria-describedby="dx-c1070de8-4a6e-e129-202a-555cd92010d8" aria-label="Till" tabindex="0" aria-valuemin="0" aria-valuemax="1000"><div class="dx-overlay dx-popup dx-popover dx-widget dx-visibility-change-handler dx-tooltip"><div class="dx-overlay-wrapper dx-popup-wrapper dx-popover-wrapper dx-tooltip-wrapper dx-popover-without-title dx-position-top" data-bind="dxControlsDescendantBindings: true" style="position: absolute; z-index: 1502;"><div class="dx-overlay-content dx-popup-normal dx-resizable" id="__hidden-bag-dx-c1070de8-4a6e-e129-202a-555cd92010d8" role="tooltip" style="width: 34px; height: auto; left: 0px; top: 0px; transform: translate(-33.5px, 4px); transition: all 0s ease 0s; z-index: 1502;"><div class="dx-popover-arrow" style="inset: auto auto 0px 50%; transform: translate(21px, 0px); margin-left: 0px;"></div><div class="dx-popup-content" style="height: auto; min-height: 0px; max-height: none;">$1000</div></div></div></div></div></div></div></div></div>
+                    </div>
+                    <div class="label-customer-rating label">Customer Rating</div>
+                    <div class="customer-rating">
+                        <div data-bind="dxSlider: {&#10;                            min: 1,&#10;                            max: 5,&#10;                            value: customerRating,&#10;                            width: 174,&#10;                            tooltip: {&#10;                                enabled: true,&#10;                                showMode: 'always' &#10;                            }&#10;                        }" class="dx-slider dx-trackbar dx-slider-tooltip-position-top dx-widget dx-visibility-change-handler" style="width: 174px;"><input type="hidden" value="5" disabled="disabled" data-disabled="true" /><div class="dx-trackbar-wrapper dx-slider-wrapper dx-swipeable"><div class="dx-trackbar-container dx-slider-bar"><div class="dx-trackbar-range dx-slider-range dx-slider-range-visible" style="width: 100%;"><div class="dx-widget dx-slider-handle" role="slider" aria-valuenow="5" aria-describedby="dx-1f73a274-e3a6-93e0-4b72-a80d22ba421a" aria-valuemin="1" aria-valuemax="5" tabindex="0"><div class="dx-overlay dx-popup dx-popover dx-widget dx-visibility-change-handler dx-tooltip"><div class="dx-overlay-wrapper dx-popup-wrapper dx-popover-wrapper dx-tooltip-wrapper dx-popover-without-title dx-position-top" data-bind="dxControlsDescendantBindings: true" style="position: absolute; z-index: 1503;"><div class="dx-overlay-content dx-popup-normal dx-resizable" id="__hidden-bag-dx-1f73a274-e3a6-93e0-4b72-a80d22ba421a" role="tooltip" style="width: 34px; height: auto; left: 0px; top: 0px; transform: translate(-29.5px, 4px); transition: all 0s ease 0s; z-index: 1503;"><div class="dx-popover-arrow" style="inset: auto auto 0px 50%; transform: translate(17px, 0px); margin-left: 0px;"></div><div class="dx-popup-content" style="height: auto; min-height: 0px; max-height: none;">5</div></div></div></div></div></div></div></div></div>
+                    </div>
+                    <div class="label-our-rating label">Our Rating</div>
+                    <div class="our-rating-external">
+                        <div class="our-rating">
+                            <div class="checkboxs-stars" data-bind="foreach: checkboxStars">
+                                <div class="dx-field-value dx-checkbox dx-widget" data-bind="dxCheckBox: {&#10;                                    value: checked&#10;                                }" role="checkbox" aria-checked="false" tabindex="0"><input type="hidden" value="false" disabled="disabled" data-disabled="true" /><div class="dx-checkbox-container"><span class="dx-checkbox-icon"></span></div></div>
+                            
+                                <div class="dx-field-value dx-checkbox dx-widget" data-bind="dxCheckBox: {&#10;                                    value: checked&#10;                                }" role="checkbox" aria-checked="false" tabindex="0"><input type="hidden" value="false" disabled="disabled" data-disabled="true" /><div class="dx-checkbox-container"><span class="dx-checkbox-icon"></span></div></div>
+                            
+                                <div class="dx-field-value dx-checkbox dx-widget" data-bind="dxCheckBox: {&#10;                                    value: checked&#10;                                }" role="checkbox" aria-checked="false" tabindex="0"><input type="hidden" value="false" disabled="disabled" data-disabled="true" /><div class="dx-checkbox-container"><span class="dx-checkbox-icon"></span></div></div>
+                            
+                                <div class="dx-field-value dx-checkbox dx-widget" data-bind="dxCheckBox: {&#10;                                    value: checked&#10;                                }" role="checkbox" aria-checked="false" tabindex="0"><input type="hidden" value="false" disabled="disabled" data-disabled="true" /><div class="dx-checkbox-container"><span class="dx-checkbox-icon"></span></div></div>
+                            
+                                <div class="dx-field-value dx-checkbox dx-widget" data-bind="dxCheckBox: {&#10;                                    value: checked&#10;                                }" role="checkbox" aria-checked="false" tabindex="0"><input type="hidden" value="false" disabled="disabled" data-disabled="true" /><div class="dx-checkbox-container"><span class="dx-checkbox-icon"></span></div></div>
+                            </div>
+                            <div class="stars-count">
+                                <div class="star one"></div>
+                                <div class="star two"></div>
+                                <div class="star three"></div>
+                                <div class="star four"></div>
+                                <div class="star five"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="label-location label">Location Rating</div>
+                    <div class="selectbox-location dx-selectbox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-texteditor-empty dx-dropdowneditor-button-visible dx-dropdowneditor dx-dropdowneditor-field-clickable" data-bind="dxSelectBox: {&#10;                        dataSource: locRating,&#10;                        placeholder: '',&#10;                        value: locationRating,&#10;                        width: 200 }" style="width: 200px;"><div class="dx-dropdowneditor-input-wrapper dx-selectbox-container"><input type="hidden" value="" disabled="disabled" data-disabled="true" /><div class="dx-texteditor-container"><input autocomplete="off" class="dx-texteditor-input" aria-haspopup="true" aria-autocomplete="list" type="text" readonly="" spellcheck="false" tabindex="0" role="combobox" aria-expanded="false" disabled="disabled" data-disabled="true" /><div data-dx_placeholder="" class="dx-placeholder"></div><div class="dx-texteditor-buttons-container"><div class="dx-dropdowneditor-button dx-button-normal dx-button-mode-contained dx-widget" role="button"><div class="dx-button-content"><div class="dx-dropdowneditor-icon"></div></div></div></div></div></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="external-for-plagination hidden-pagination" data-bind="css: { 'hidden-pagination': pages().length &lt;= 1 }">
+                <div class="switch switch-left switch-left-disabled" data-bind="css: { 'switch-left-disabled': disablePrev }, click: previousPage"></div>
+                <div class="pagination" data-bind="foreach: pages">
+                    <div class="number-page number-page-active" data-bind=" click: $parent.selectedPage, css: { 'number-page-active': number == $parent.currentPage() }">
+                        <p data-bind="text:number">1</p>
+                    </div>
+                </div>
+                <div class="switch switch-right switch-right-disabled" data-bind="css: { 'switch-right-disabled': disableNext }, click: nextPage"></div>
+            </div>
+        </div>
+    </div><div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content dx-content-content dx-transition-inner-wrapper dx-inactive-view" data-dx-target-placeholder-id="content">
+            <div class="external-hotel">
+                <div class="data-hotel content">
+                    <div class="date-info">
+                        <p class="date" data-bind="text:date">20-21, Mar 2021</p>
+                        <p class="adults" data-bind="text: adultsCurrent ">1 night, 1 room, 1 adult</p>
+                        <div class="change-search gray-button dx-button dx-button-normal dx-button-mode-contained dx-widget dx-button-has-text" data-bind="dxButton: {&#10;                            text: 'Change Search',&#10;                            onClick : showSearch,&#10;                            width: 138,&#10;                            height: 40&#10;                        }, css: {&#10;                            'change-search-active': visibleSearch&#10;                        }" role="button" aria-label="Change Search" tabindex="0" style="width: 138px; height: 40px;"><div class="dx-button-content"><span class="dx-button-text">Change Search</span></div></div>
+                    </div>
+                    <div class="hotel-info">
+                        <h4 class="hotel-name" data-bind="text:hotelName ">LA Motor Lodge</h4>
+                        <div class="rating-container">
+                            <div class="rating-stars" data-bind="style: { width: 20 * customerRating() + '%' }" style="width: 40%;"></div>
+                        </div>
+                        <div class="external-address">
+                            <p class="address" data-bind="text: fullAddress ">5838 West Pico Los Angeles, CA, 90019, USA</p>
+                        </div>
+                    </div>
+                    <div class="internal-search dx-overlay dx-popup dx-widget dx-state-invisible dx-visibility-change-handler" data-bind="dxPopup: {&#10;                        visible: visibleSearch,&#10;                        width:380,&#10;                        height: 290,&#10;                        closeOnOutsideClick: true,&#10;                        dragEnabled: false,&#10;                        showTitle: false,&#10;                        showCloseButton: false,&#10;                        shading: false,&#10;                        contentTemplate: 'changeSearch',&#10;                        position: {&#10;                            at: 'top',&#10;                            offset :'275 316',&#10;                            of: '.page'&#10;                        }&#10;                    }"><div class="dx-overlay-content dx-popup-normal" aria-hidden="true" tabindex="0" style="width: 380px; height: 290px;"><div class="dx-popup-content"></div></div></div>
+                </div>
+            </div>
+            <div class="external-gallery-guest">
+                <div class="gallery-guest">
+                    <div class="gallery-hotel">
+                        <div class="gallery-container-hotel dx-gallery dx-widget dx-visibility-change-handler dx-collection dx-swipeable" data-bind="dxGallery: {&#10;                            selectedIndex: currentImageHotel,&#10;                            dataSource: hotelGallery().images,&#10;                            noDataText: 'Loading...',&#10;                            height:387,&#10;                            width: 620,&#10;                            showIndicator: false&#10;                        }" role="listbox" tabindex="0" aria-label="gallery" aria-activedescendant="dx-8ed3962b-3e99-6ec7-be42-98ca97e77a99" style="width: 620px; height: 387px;"><div class="dx-gallery-wrapper"><div class="dx-gallery-container" style="transform: translate(0px, 0px);"><div class="dx-item dx-gallery-item dx-item-selected dx-gallery-item-selected dx-state-focused" role="option" aria-selected="true" id="__hidden-bag-dx-8ed3962b-3e99-6ec7-be42-98ca97e77a99" style="width: 100%; margin-left: 0%;"><div data-options="dxTemplate: { name: 'item' }" class="dx-template-wrapper dx-item-content dx-gallery-item-content">
+                                <img data-bind="attr: { src: src }" src="Content/Pictures/LA-5.jpg" />
+                            </div></div><div class="dx-item dx-gallery-item dx-gallery-item-invisible" role="option" aria-selected="false" style="width: 100%;"><div data-options="dxTemplate: { name: 'item' }" class="dx-template-wrapper dx-item-content dx-gallery-item-content">
+                                <img data-bind="attr: { src: src }" src="Content/Pictures/Lobby-30.jpg" />
+                            </div></div><div class="dx-item dx-gallery-item dx-gallery-item-invisible" role="option" aria-selected="false" style="width: 100%;"><div data-options="dxTemplate: { name: 'item' }" class="dx-template-wrapper dx-item-content dx-gallery-item-content">
+                                <img data-bind="attr: { src: src }" src="Content/Pictures/Pool-14.jpg" />
+                            </div></div><div class="dx-item dx-gallery-item dx-gallery-item-invisible" role="option" aria-selected="false" style="width: 100%;"><div data-options="dxTemplate: { name: 'item' }" class="dx-template-wrapper dx-item-content dx-gallery-item-content">
+                                <img data-bind="attr: { src: src }" src="Content/Pictures/Restaurant-7.jpg" />
+                            </div></div><div class="dx-item dx-gallery-item dx-gallery-item-invisible" role="option" aria-selected="false" style="width: 100%;"><div data-options="dxTemplate: { name: 'item' }" class="dx-template-wrapper dx-item-content dx-gallery-item-content">
+                                <img data-bind="attr: { src: src }" src="Content/Pictures/MeetingRoom-5.jpg" />
+                            </div></div><div class="dx-item dx-gallery-item dx-gallery-item-invisible" role="option" aria-selected="false" style="width: 100%;"><div data-options="dxTemplate: { name: 'item' }" class="dx-template-wrapper dx-item-content dx-gallery-item-content">
+                                <img data-bind="attr: { src: src }" src="Content/Pictures/Bedroom-4-9.jpg" />
+                            </div></div></div></div></div>
+                        <div class="mini-gallery-hotel" data-bind="foreach:hotelGallery().images">
+                            <div class="external-padding">
+                                <div data-bind=" css: { 'current-img': index == $parent.currentImageHotel() }" class="current-img">
+                                    <div data-bind=" css: { 'white-pading': index == $parent.currentImageHotel() }" class="white-pading">
+                                    </div>
+                                </div>
+                                <img class="small-image-hotel" data-bind="attr: { src: src }, click: $parent.selectedIndexHotel" src="Content/Pictures/LA-5.jpg" />
+                            </div>
+                        
+                            <div class="external-padding">
+                                <div data-bind=" css: { 'current-img': index == $parent.currentImageHotel() }">
+                                    <div data-bind=" css: { 'white-pading': index == $parent.currentImageHotel() }">
+                                    </div>
+                                </div>
+                                <img class="small-image-hotel" data-bind="attr: { src: src }, click: $parent.selectedIndexHotel" src="Content/Pictures/Lobby-30.jpg" />
+                            </div>
+                        
+                            <div class="external-padding">
+                                <div data-bind=" css: { 'current-img': index == $parent.currentImageHotel() }">
+                                    <div data-bind=" css: { 'white-pading': index == $parent.currentImageHotel() }">
+                                    </div>
+                                </div>
+                                <img class="small-image-hotel" data-bind="attr: { src: src }, click: $parent.selectedIndexHotel" src="Content/Pictures/Pool-14.jpg" />
+                            </div>
+                        
+                            <div class="external-padding">
+                                <div data-bind=" css: { 'current-img': index == $parent.currentImageHotel() }">
+                                    <div data-bind=" css: { 'white-pading': index == $parent.currentImageHotel() }">
+                                    </div>
+                                </div>
+                                <img class="small-image-hotel" data-bind="attr: { src: src }, click: $parent.selectedIndexHotel" src="Content/Pictures/Restaurant-7.jpg" />
+                            </div>
+                        
+                            <div class="external-padding">
+                                <div data-bind=" css: { 'current-img': index == $parent.currentImageHotel() }">
+                                    <div data-bind=" css: { 'white-pading': index == $parent.currentImageHotel() }">
+                                    </div>
+                                </div>
+                                <img class="small-image-hotel" data-bind="attr: { src: src }, click: $parent.selectedIndexHotel" src="Content/Pictures/MeetingRoom-5.jpg" />
+                            </div>
+                        
+                            <div class="external-padding">
+                                <div data-bind=" css: { 'current-img': index == $parent.currentImageHotel() }">
+                                    <div data-bind=" css: { 'white-pading': index == $parent.currentImageHotel() }">
+                                    </div>
+                                </div>
+                                <img class="small-image-hotel" data-bind="attr: { src: src }, click: $parent.selectedIndexHotel" src="Content/Pictures/Bedroom-4-9.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guests">
+                        <div class="caption">
+                            <span>What our guests say...</span>
+                        </div>
+                        <div class="reviews" data-bind="foreach: reviews">
+                            <div class="review">
+                                <p class="text" data-bind="text: review">There is no way I will ever return to this place. The hotel needs to be renovated right away. The room made me cry.</p>
+                                <p class="posted-on" data-bind="text:postedOn ">Mar 2, 2014</p>
+                                <div class="rating-container">
+                                    <div class="rating-stars" data-bind="style:{width: 20 * rating + '%'}" style="width: 20%;"></div>
+                                </div>
+                            </div>
+                        
+                            <div class="review">
+                                <p class="text" data-bind="text: review">Well, it's cheap. That's all I can say…cheap so you can use your money to see the sites of LA in style.</p>
+                                <p class="posted-on" data-bind="text:postedOn ">Mar 7, 2014</p>
+                                <div class="rating-container">
+                                    <div class="rating-stars" data-bind="style:{width: 20 * rating + '%'}" style="width: 40%;"></div>
+                                </div>
+                            </div>
+                        
+                            <div class="review">
+                                <p class="text" data-bind="text: review">Wow, some of these reviews are just not fair. This place is not that bad. I even got them to bring a roll-away to my room.</p>
+                                <p class="posted-on" data-bind="text:postedOn ">Mar 17, 2014</p>
+                                <div class="rating-container">
+                                    <div class="rating-stars" data-bind="style:{width: 20 * rating + '%'}" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="description content">
+                <div class="caption">Description</div>
+                <div class="text" data-bind="text:description">For the budget conscious, the LAML offers clean, comfortable rooms so you can wake up refreshed and ready for an exciting day visiting the sites of Los Angeles. We even offer free internet access if you have a computer.  We look forward to your visit.</div>
+            </div>
+            <div class="hotel-features content">
+                <div class="feature">
+                    <div class="caption">Features</div>
+                    <div class="features" data-bind="foreach:features">
+                        <div data-bind="text:feature">Outdoor Pool</div>
+                    
+                        <div data-bind="text:feature">Restaurant</div>
+                    
+                        <div data-bind="text:feature">Fitness Center</div>
+                    
+                        <div data-bind="text:feature">Bar/Lounge</div>
+                    
+                        <div data-bind="text:feature">Ironing Board</div>
+                    
+                        <div data-bind="text:feature">Espresso Bar</div>
+                    </div>
+                </div>
+                <div class="room">
+                    <div class="caption">Rooms</div>
+                    <div class="features">
+                        <div>Climate control    </div>
+                        <div>Air conditioning</div>
+                        <div>Coffee/tea maker</div>
+                        <div>Iron/ironing</div>
+                    </div>
+                </div>
+                <div class="location">
+                    <div class="caption">Location</div>
+                    <div class="features">
+                        <div>Airport shuttle (available 24 hours)</div>
+                        <div> Cruise terminal shuttle</div>
+                    </div>
+                </div>
+            </div>
+        <div class="accordion-hotels dx-accordion dx-widget dx-visibility-change-handler dx-collection" data-bind="dxAccordion:{&#10;            items: roomDesc,&#10;            itemTemplate:'text',&#10;            selectedIndex: selectedAccItem,&#10;            noDataText: 'Loading...',&#10;            onItemTitleClick: resetScroll&#10;        }" role="tablist" aria-multiselectable="false" tabindex="0" aria-activedescendant="dx-431447f5-9b3e-25dd-8378-ade9d2fcab1c"><div class="dx-accordion-wrapper"><div class="dx-item dx-accordion-item dx-item-selected dx-accordion-item-opened" role="tab" aria-selected="true" style=""><div class="list-item-custom content dx-template-wrapper dx-item-content dx-accordion-item-title" data-options="dxTemplate : { name: 'title' }">
+                <div class="short-description">
+                    <div class="accordion-state"></div>
+                    <div class="price">
+                        <div class="book-it gray-button dx-button dx-button-normal dx-button-mode-contained dx-widget dx-button-has-text" data-bind="dxButton: {&#10;                            text:'Book it',&#10;                            onClick: $root.booking&#10;                        }" role="button" aria-label="Book it" tabindex="0"><div class="dx-button-content"><span class="dx-button-text">Book it</span></div></div>
+                        <div class="lowest-price" data-bind="text: $data.title.nightlyRate">$109</div>
+                    </div>
+                    <div class="lowest-price-text">
+                        LOWEST PRICE
+                    </div>
+                    <p class="description-room" data-bind="text: $data.title.shortDescription">Best Value Single Bed Room</p>
+                </div>
+            </div><div class="list-item-custom content fullContent dx-template-wrapper dx-item-content dx-accordion-item-body" data-options="dxTemplate : { name: 'text' } " aria-hidden="false">
+                <div class="full-description">
+                    <div class="text">
+                        <span data-bind="text:$data.text.roomType">Single</span>
+                        <span data-bind="text:$data.text.shortDescription">Best Value Single Bed Room</span>
+                    </div>
+                    <div class="container-room">
+                        <div class="scroll scroll-button-left scroll-left-no-active" data-bind="click: $root.resetScroll,  css: { 'scroll-left-no-active': !$root.scrollRight() } "></div>
+                        <div class="external-room-gallery">
+                            <div class="room-gallery" data-bind="foreach: $data.text.roomGalleries, css: { 'scroll-right': $root.scrollRight }">
+                                <div class="padding-img">
+                                    <img class="small-image" data-bind="attr: { src: src }, click: $root.openRoomGallery" src="Content/Pictures/Bathroom-6.jpg" />
+                                </div>
+                            
+                                <div class="padding-img">
+                                    <img class="small-image" data-bind="attr: { src: src }, click: $root.openRoomGallery" src="Content/Pictures/Bedroom-2-3.jpg" />
+                                </div>
+                            
+                                <div class="padding-img">
+                                    <img class="small-image" data-bind="attr: { src: src }, click: $root.openRoomGallery" src="Content/Pictures/Restaurant-5.jpg" />
+                                </div>
+                            
+                                <div class="padding-img">
+                                    <img class="small-image" data-bind="attr: { src: src }, click: $root.openRoomGallery" src="Content/Pictures/Room-1.jpg" />
+                                </div>
+                            
+                                <div class="padding-img">
+                                    <img class="small-image" data-bind="attr: { src: src }, click: $root.openRoomGallery" src="Content/Pictures/Room-3.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroll scroll-button-right" data-bind="click:$root.galleryRight,  css: {'scroll-right-no-active' : $root.scrollRight() }"></div>
+                    </div>
+                    <div class="features">
+                        <div class="features-part-1" data-bind="foreach: $data.text.featuresPart1">
+                            <div class="feature">
+                                <img class="icon" data-bind="attr: {src:icon}" src="Content/Icons/BottledWater.png                    " />
+                                <div data-bind="text: feature">Bottled Water</div>
+                            </div>
+                        
+                            <div class="feature">
+                                <img class="icon" data-bind="attr: {src:icon}" src="Content/Icons/FlatscreenTV.png                    " />
+                                <div data-bind="text: feature">Flatscreen TV</div>
+                            </div>
+                        
+                            <div class="feature">
+                                <img class="icon" data-bind="attr: {src:icon}" src="Content/Icons/WirelessInternet.png                " />
+                                <div data-bind="text: feature">Wireless Internet</div>
+                            </div>
+                        </div>
+                        <div class="features-part-2" data-bind="foreach: $data.text.featuresPart2">
+                            <div class="feature">
+                                <img class="icon" data-bind="attr: {src:icon}" src="Content/Icons/Mini-Refrigerator.png               " />
+                                <div data-bind="text: feature">Mini-Refrigerator</div>
+                            </div>
+                        
+                            <div class="feature">
+                                <img class="icon" data-bind="attr: {src:icon}" src="Content/Icons/CableTV.png                         " />
+                                <div data-bind="text: feature">Cable TV</div>
+                            </div>
+                        
+                            <div class="feature">
+                                <img class="icon" data-bind="attr: {src:icon}" src="Content/Icons/WirelessInternet.png                " />
+                                <div data-bind="text: feature">Wireless Internet</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="dx-item dx-accordion-item dx-accordion-item-closed" role="tab" aria-selected="false" style="height: 50px;"><div class="list-item-custom content dx-template-wrapper dx-item-content dx-accordion-item-title" data-options="dxTemplate : { name: 'title' }">
+                <div class="short-description">
+                    <div class="accordion-state"></div>
+                    <div class="price">
+                        <div class="book-it gray-button dx-button dx-button-normal dx-button-mode-contained dx-widget dx-button-has-text" data-bind="dxButton: {&#10;                            text:'Book it',&#10;                            onClick: $root.booking&#10;                        }" role="button" aria-label="Book it" tabindex="0"><div class="dx-button-content"><span class="dx-button-text">Book it</span></div></div>
+                        <div class="lowest-price" data-bind="text: $data.title.nightlyRate">$129</div>
+                    </div>
+                    <div class="lowest-price-text">
+                        LOWEST PRICE
+                    </div>
+                    <p class="description-room" data-bind="text: $data.title.shortDescription">Best Value with 2 Beds</p>
+                </div>
+            </div><div></div></div><div class="dx-item dx-accordion-item dx-accordion-item-closed" role="tab" aria-selected="false" style="height: 50px;"><div class="list-item-custom content dx-template-wrapper dx-item-content dx-accordion-item-title" data-options="dxTemplate : { name: 'title' }">
+                <div class="short-description">
+                    <div class="accordion-state"></div>
+                    <div class="price">
+                        <div class="book-it gray-button dx-button dx-button-normal dx-button-mode-contained dx-widget dx-button-has-text" data-bind="dxButton: {&#10;                            text:'Book it',&#10;                            onClick: $root.booking&#10;                        }" role="button" aria-label="Book it" tabindex="0"><div class="dx-button-content"><span class="dx-button-text">Book it</span></div></div>
+                        <div class="lowest-price" data-bind="text: $data.title.nightlyRate">$139</div>
+                    </div>
+                    <div class="lowest-price-text">
+                        LOWEST PRICE
+                    </div>
+                    <p class="description-room" data-bind="text: $data.title.shortDescription">Standard Room with a Queen Bed</p>
+                </div>
+            </div><div></div></div><div class="dx-item dx-accordion-item dx-accordion-item-closed" role="tab" aria-selected="false" style="height: 50px;"><div class="list-item-custom content dx-template-wrapper dx-item-content dx-accordion-item-title" data-options="dxTemplate : { name: 'title' }">
+                <div class="short-description">
+                    <div class="accordion-state"></div>
+                    <div class="price">
+                        <div class="book-it gray-button dx-button dx-button-normal dx-button-mode-contained dx-widget dx-button-has-text" data-bind="dxButton: {&#10;                            text:'Book it',&#10;                            onClick: $root.booking&#10;                        }" role="button" aria-label="Book it" tabindex="0"><div class="dx-button-content"><span class="dx-button-text">Book it</span></div></div>
+                        <div class="lowest-price" data-bind="text: $data.title.nightlyRate">$159</div>
+                    </div>
+                    <div class="lowest-price-text">
+                        LOWEST PRICE
+                    </div>
+                    <p class="description-room" data-bind="text: $data.title.shortDescription">Upgraded Room with a Queen Bed</p>
+                </div>
+            </div><div></div></div><div class="dx-item dx-accordion-item dx-accordion-item-closed" role="tab" aria-selected="false" style="height: 50px;"><div class="list-item-custom content dx-template-wrapper dx-item-content dx-accordion-item-title" data-options="dxTemplate : { name: 'title' }">
+                <div class="short-description">
+                    <div class="accordion-state"></div>
+                    <div class="price">
+                        <div class="book-it gray-button dx-button dx-button-normal dx-button-mode-contained dx-widget dx-button-has-text" data-bind="dxButton: {&#10;                            text:'Book it',&#10;                            onClick: $root.booking&#10;                        }" role="button" aria-label="Book it" tabindex="0"><div class="dx-button-content"><span class="dx-button-text">Book it</span></div></div>
+                        <div class="lowest-price" data-bind="text: $data.title.nightlyRate">$179</div>
+                    </div>
+                    <div class="lowest-price-text">
+                        LOWEST PRICE
+                    </div>
+                    <p class="description-room" data-bind="text: $data.title.shortDescription">Courtyard View with a King Bed</p>
+                </div>
+            </div><div></div></div></div></div>
+        <div class="popup-room dx-overlay dx-popup dx-widget dx-state-invisible dx-visibility-change-handler" data-bind="dxPopup: {&#10;            visible: popupRoomVisible,&#10;            width:600,&#10;            height:520,&#10;            closeOnOutsideClick: true,&#10;            dragEnabled:false,&#10;            showTitle:false,&#10;            showCloseButton: false&#10;        }"><div class="dx-overlay-content dx-popup-normal" aria-hidden="true" tabindex="0" style="width: 600px; height: 520px;"><div class="dx-popup-content"></div></div></div>
+    </div><div data-options="dxContent: { targetPlaceholder: 'content' } " class="dx-content dx-content-content dx-transition-inner-wrapper dx-active-view" data-dx-target-placeholder-id="content">
+        <div class="external-hotel">
+            <div class="data-hotel content">
+                <div class="contact-us">
+                    <div class="external-img">
+                        <div id="img">
+                        </div>
+                    </div>
+                    <div class="text">We are here to help</div>
+                    <div class="contact-email">
+                        <h4>Contact us by email: </h4>
+                        <a href="mailto:info@devexpress.com"> info@devexpress.com</a>
+                    </div>
+                </div>
+                <div class="hotel-info">
+                    <h4 class="hotel-name" data-bind="text: hotelName">LA Motor Lodge</h4>
+                    <div class="rating-container">
+                        <div class="rating-stars" data-bind="style: { width: 20 * customerRating() + '%' }" style="width: 40%;"></div>
+                    </div>
+                    <p class="address" data-bind="text: fullAddress">5838 West Pico Los Angeles, CA, 90019, USA</p>
+                </div>
+            </div>
+        </div>
+        <div class="popup-print-preview dx-overlay dx-popup dx-widget dx-state-invisible dx-visibility-change-handler" data-bind="dxPopup: {&#10;            visible: printPreviewVisible,&#10;            width: 1000,&#10;            height: 950,&#10;            dragEnabled: false,&#10;            hoverStateEnabled: false,&#10;            position: {&#10;                my: 'center',&#10;                at: 'center',&#10;                of: '.page'&#10;            }, closeOnOutsideClick: true&#10;        }"><div class="dx-overlay-content dx-popup-normal" aria-hidden="true" tabindex="0" style="width: 1000px; height: 950px;"><div class="dx-popup-content"></div></div></div>
+        <div class="warning content">
+            <p>Book now and remember...</p>
+            <p class="text">This is not real travel website and these are not real hotels</p>
+        </div>
+        <div class="billing content">
+            <div class="external-reservation">
+                <h4>Your Reservation Summary</h4>
+                <div class="reservation-summary">
+                    <div class="hotel-description">
+                        <div class="desc">
+                            <h4 class="hotel-name" data-bind="text: hotelName">LA Motor Lodge</h4>
+                            <p class="address" data-bind="text: fullAddress">5838 West Pico Los Angeles, CA, 90019, USA</p>
+                        </div>
+                        <div class="external-img">
+                            <img class="img-on-booking" data-bind="attr: { src: hotelImg }" src="Content/Pictures/LA-5.jpg" />
+                        </div>
+                        <div class="date">
+                            <div class="dx-fieldset">
+                                <div class="dx-field-label first-label">Check In</div>
+                                <div class="dx-field-label">Check Out</div>
+                            </div>
+                            <div class="numbers">
+                                <p class="check-in" data-bind="text:checkIn">3/20/2021</p>
+                                <p class="check-out" data-bind="text:checkOut">3/21/2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="short-description">
+                        <div class="desc" data-bind="text: shortDesc">Best Value Single Bed Room, Single</div>
+                        <div class="features" data-bind="foreach: featuresRoom">
+                            <div class="feature">
+                                <img class="icon" data-bind="attr: { src:icon }" src="Content/Icons/BottledWater.png                    " />
+                                <div data-bind="text: feature">Bottled Water</div>
+                            </div>
+                        
+                            <div class="feature">
+                                <img class="icon" data-bind="attr: { src:icon }" src="Content/Icons/FlatscreenTV.png                    " />
+                                <div data-bind="text: feature">Flatscreen TV</div>
+                            </div>
+                        
+                            <div class="feature">
+                                <img class="icon" data-bind="attr: { src:icon }" src="Content/Icons/WirelessInternet.png                " />
+                                <div data-bind="text: feature">Wireless Internet</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total-result">
+                        <div class="total-pay" data-bind="foreach:viewDays">
+                            <div class="day" data-bind="text:day">Saturday, March 20, 2021</div>
+                            <h4 class="price" data-bind="text: $parent.price">$109.00</h4>
+                        
+                            <div class="day" data-bind="text:day">Sunday, March 21, 2021</div>
+                            <h4 class="price" data-bind="text: $parent.price">$109.00</h4>
+                        </div>
+                        <div class="points" data-bind="visible: visiblePoints" style="display: none;">...... </div>
+                        <div class="sum">
+                            <p class="text">TOTAL TO PAY NOW</p>
+                            <h4 class="total-price" data-bind="text: totalPrice">$218.00</h4>
+                        </div>
+                    </div>
+                    <div class="deals-discounts" tabindex="0">
+                        <div class="dx-field-label">Deals and Discounts</div>
+                        <div class="radio-button dx-radiogroup dx-widget dx-radiogroup-vertical" data-bind="dxRadioGroup: {&#10;                            dataSource: offers,&#10;                            valueExpr: 'offer',&#10;                            value: valueRadioGroup&#10;                        }" role="radiogroup" tabindex="0" aria-activedescendant="dx-c61a7937-2b60-d4be-bdf8-e13c1906bb33"><input type="hidden" value="" /><div class="dx-widget dx-collection"><div class="dx-item dx-radiobutton" role="radio" aria-selected="false" aria-checked="false"><div class="dx-radio-value-container"><div class="dx-radiobutton-icon"><div class="dx-radiobutton-icon-dot"></div></div></div><div data-options="dxTemplate: { name: 'item' }" class="dx-template-wrapper dx-item-content">
+                                <p data-bind="text: offer">10-15% discount at Macy's stores</p>
+                            </div></div><div class="dx-item dx-radiobutton" role="radio" aria-selected="false" aria-checked="false"><div class="dx-radio-value-container"><div class="dx-radiobutton-icon"><div class="dx-radiobutton-icon-dot"></div></div></div><div data-options="dxTemplate: { name: 'item' }" class="dx-template-wrapper dx-item-content">
+                                <p data-bind="text: offer">Exclusive offers - $500 value</p>
+                            </div></div></div></div>
+                    </div>
+                    <!--<div class="button-print">
+                        <div class="print-invoice" data-bind="dxButton:{text:'Print Invoice', width: 150, height: 40, onClick: showPrintPreview }"></div>
+                    </div>-->
+                </div>
+            </div>
+            <div class="login-payment">
+                <h4>Already have a DX Hotels account? Login below.</h4>
+                <div class="login">
+                    <!-- ko with: DXHotels.layoutModel -->
+                    <div data-bind="dxValidationGroup: {}" class="dx-validationgroup">
+                        <div class="login-visible" data-bind="visible: !userName()">
+                            <div class="login-form detail-form loginFormActive dx-form dx-widget dx-visibility-change-handler" data-bind="css: { loginFormActive: !loginPopupVisible() }, dxForm: {&#10;                                onEditorEnterKey: function() {$('.login-payment .login .button').click()},&#10;                                width: 330,&#10;                                items: [{&#10;                                        name: 'login',&#10;                                        label: {&#10;                                            visible: false&#10;                                        },&#10;                                        editorType: 'dxTextBox',&#10;                                        editorOptions: {&#10;                                            mode: 'email',&#10;                                            placeholder: 'Email',&#10;                                            width: 330,&#10;                                            height: 30&#10;                                        },&#10;                                        validationRules: [{&#10;                                               type: 'required',&#10;                                               message: 'Email is required'&#10;                                           }, {&#10;                                               type: 'email'&#10;                                        }]&#10;                                    }, {&#10;                                        name: 'password',&#10;                                        label: {&#10;                                            visible: false&#10;                                        },&#10;                                        editorType: 'dxTextBox',&#10;                                        editorOptions: {&#10;                                            mode: 'password',&#10;                                            placeholder: 'Password',&#10;                                            width: 330,&#10;                                            height: 30&#10;                                        },&#10;                                        validationRules: [{&#10;                                               type: 'required',&#10;                                               message: 'Password is required'&#10;                                        }]&#10;                                }]&#10;                            }" role="form" style="width: 330px;"><div class="dx-layout-manager dx-widget"><div class="dx-widget dx-collection dx-responsivebox dx-responsivebox-screen-lg" style="width: 100%; height: 100%;"><div class="dx-box-flex dx-box dx-widget dx-visibility-change-handler dx-collection" style="display: flex; flex-direction: column; width: 100%; height: 100%; justify-content: flex-start; align-items: stretch;"><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-row dx-first-col dx-last-col dx-field-item dx-col-0 dx-field-item-required dx-flex-layout"><div class="dx-field-item-content dx-field-item-content-location-right"><div class="dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-texteditor-empty dx-validator dx-visibility-change-handler" style="width: 330px; height: 30px;"><div class="dx-texteditor-container"><input autocomplete="off" id="dx_dx-9e3d0be5-655e-ea1b-d656-d759c6294e1c_login" class="dx-texteditor-input" type="email" spellcheck="false" tabindex="0" role="textbox" aria-required="true" style="min-height: 0px;" /><div data-dx_placeholder="Email" class="dx-placeholder"></div><div class="dx-texteditor-buttons-container"></div></div></div></div></div></div></div><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-col dx-last-col dx-field-item dx-col-0 dx-field-item-required dx-flex-layout"><div class="dx-field-item-content dx-field-item-content-location-right"><div class="dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-texteditor-empty dx-validator dx-visibility-change-handler" style="width: 330px; height: 30px;"><div class="dx-texteditor-container"><input autocomplete="off" id="dx_dx-9e3d0be5-655e-ea1b-d656-d759c6294e1c_password" class="dx-texteditor-input" type="password" spellcheck="false" tabindex="0" role="textbox" aria-required="true" style="min-height: 0px;" /><div data-dx_placeholder="Password" class="dx-placeholder"></div><div class="dx-texteditor-buttons-container"></div></div></div></div></div></div></div></div></div></div></div>
+                            <div class="button gray-button dx-button dx-button-normal dx-button-mode-contained dx-widget dx-button-has-text" data-bind="dxButton: {&#10;                                text: 'Login',&#10;                                onClick: showWelcome&#10;                            }" role="button" aria-label="Login" tabindex="0"><div class="dx-button-content"><span class="dx-button-text">Login</span></div></div>
+                        </div>
+                    </div>
+                    <div class="welcom-user" data-bind="visible: userName()" style="display: none;">
+                       Welcome,  <span data-bind="text: userName"></span>
+                    </div>
+                    <!-- /ko -->
+                </div>
+                <h4>Room Details</h4>
+                <div class="room-details">
+                    <div class="description">
+                        <p data-bind="text:roomDetails">Best Value Single Bed Room, Single, Adults 1</p>
+                    </div>
+                    <div class="info-people">
+                        <p>
+                            Please give us the name of one of the people staying in this room
+                        </p>
+                        <div class="form detail-form dx-form dx-widget dx-visibility-change-handler" data-bind="dxForm: {&#10;                            width: 330,&#10;                            height: 400,&#10;                            items: [{&#10;                                    name: 'firstName',&#10;                                    label: {&#10;                                        visible: false&#10;                                    },&#10;                                    editorType: 'dxTextBox',&#10;                                    editorOptions: {&#10;                                        placeholder: 'First Name',&#10;                                        width: 330,&#10;                                        height: 30&#10;                                    }&#10;                                }, {&#10;                                    name: 'lastName',&#10;                                    label: {&#10;                                        visible: false&#10;                                    },&#10;                                    editorType: 'dxTextBox',&#10;                                    editorOptions: {&#10;                                        placeholder: 'Last Name',&#10;                                        width: 330,&#10;                                        height: 30&#10;                                    }&#10;                                }, {&#10;                                    name: 'email',&#10;                                    label: {&#10;                                        visible: false&#10;                                    },&#10;                                    editorType: 'dxTextBox',&#10;                                    editorOptions: {&#10;                                        mode: 'email',&#10;                                        placeholder: 'Email',&#10;                                        width: 330,&#10;                                        height: 30&#10;                                    },&#10;                                    validationRules: [{&#10;                                        type: 'required',&#10;                                        message: 'Email is required'&#10;                                    }, {&#10;                                        type: 'email'&#10;                                    }]&#10;                            }]&#10;                        }" role="form" style="width: 330px; height: 400px;"><div class="dx-layout-manager dx-widget"><div class="dx-widget dx-collection dx-responsivebox dx-responsivebox-screen-lg" style="width: 100%; height: 100%;"><div class="dx-box-flex dx-box dx-widget dx-visibility-change-handler dx-collection" style="display: flex; flex-direction: column; width: 100%; height: 100%; justify-content: flex-start; align-items: stretch;"><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-row dx-first-col dx-last-col dx-field-item dx-col-0 dx-field-item-optional dx-flex-layout"><div class="dx-field-item-content dx-field-item-content-location-right"><div class="dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-texteditor-empty" style="width: 330px; height: 30px;"><div class="dx-texteditor-container"><input autocomplete="off" id="dx_dx-504be884-dd53-ddd4-1c85-19cbd9486ced_firstName" class="dx-texteditor-input" type="text" spellcheck="false" tabindex="0" role="textbox" aria-required="false" style="min-height: 0px;" /><div data-dx_placeholder="First Name" class="dx-placeholder"></div><div class="dx-texteditor-buttons-container"></div></div></div></div></div></div></div><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-col dx-last-col dx-field-item dx-col-0 dx-field-item-optional dx-flex-layout"><div class="dx-field-item-content dx-field-item-content-location-right"><div class="dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-texteditor-empty" style="width: 330px; height: 30px;"><div class="dx-texteditor-container"><input autocomplete="off" id="dx_dx-504be884-dd53-ddd4-1c85-19cbd9486ced_lastName" class="dx-texteditor-input" type="text" spellcheck="false" tabindex="0" role="textbox" aria-required="false" style="min-height: 0px;" /><div data-dx_placeholder="Last Name" class="dx-placeholder"></div><div class="dx-texteditor-buttons-container"></div></div></div></div></div></div></div><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-col dx-last-col dx-field-item dx-col-0 dx-field-item-required dx-flex-layout"><div class="dx-field-item-content dx-field-item-content-location-right"><div class="dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-texteditor-empty dx-validator dx-visibility-change-handler" style="width: 330px; height: 30px;"><div class="dx-texteditor-container"><input autocomplete="off" id="dx_dx-504be884-dd53-ddd4-1c85-19cbd9486ced_email" class="dx-texteditor-input" type="email" spellcheck="false" tabindex="0" role="textbox" aria-required="true" style="min-height: 0px;" /><div data-dx_placeholder="Email" class="dx-placeholder"></div><div class="dx-texteditor-buttons-container"></div></div></div></div></div></div></div></div></div></div></div>
+                    </div>
+                    <div class="additional">
+                        <div class="dx-fieldset">
+                            <div class="dx-field">
+                                <div class="dx-field-value dx-checkbox dx-checkbox-has-text dx-widget" data-bind="dxCheckBox: {&#10;                                    value: false,&#10;                                    text: 'Queen Bed'&#10;                                }" role="checkbox" aria-checked="false" tabindex="0"><input type="hidden" value="false" /><div class="dx-checkbox-container"><span class="dx-checkbox-icon"></span><span class="dx-checkbox-text">Queen Bed</span></div></div>
+                            </div>
+                            <div class="dx-field">
+                                <div class="dx-field-value dx-checkbox dx-checkbox-has-text dx-widget" data-bind="dxCheckBox: {&#10;                                    value: false,&#10;                                    text : 'Smoking'&#10;                                }" role="checkbox" aria-checked="false" tabindex="0"><input type="hidden" value="false" /><div class="dx-checkbox-container"><span class="dx-checkbox-icon"></span><span class="dx-checkbox-text">Smoking</span></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4>Payment Details</h4>
+                <div class="payment">
+                    <div data-bind="dxForm: {&#10;                        items: [{&#10;                            itemType: 'tabbed',&#10;                            tabs: [{&#10;                                    title: 'Credit Cart',&#10;                                    template: 'creditCart'&#10;                                }, {&#10;                                    title: 'Cash',&#10;                                    template: 'cash'&#10;                                }, {&#10;                                    title: 'PayPal',&#10;                                    template: 'paypal'&#10;                            }]&#10;                        }],&#10;                        height: '100%'&#10;                    }" class="dx-form dx-widget dx-visibility-change-handler" role="form" style="height: 100%;"><div class="dx-layout-manager dx-widget"><div class="dx-widget dx-collection dx-responsivebox dx-responsivebox-screen-lg" style="width: 100%; height: 100%;"><div class="dx-box-flex dx-box dx-widget dx-visibility-change-handler dx-collection" style="display: flex; flex-direction: row; width: 100%; height: 100%; justify-content: flex-start; align-items: stretch;"><div class="dx-item dx-box-item" style="display: flex; max-width: none; min-width: 0px; flex: 1 1 auto;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-row dx-first-col dx-last-col dx-field-item dx-col-0 dx-field-item-optional"><div class="dx-field-item-content dx-field-item-content-location-right"><div class="dx-multiview dx-swipeable dx-tabpanel dx-widget dx-visibility-change-handler dx-collection" role="tabpanel" tabindex="-1"><div class="dx-tabpanel-tabs"><div role="tablist" class="dx-tabs dx-widget dx-visibility-change-handler dx-collection dx-tabs-expanded" tabindex="0" aria-activedescendant="dx-cc21925e-e2d4-bd63-b159-441dc39660d2"><div class="dx-tabs-wrapper"><div class="dx-item dx-tab dx-tab-selected" aria-selected="true" role="tab" aria-controls="dx-6289528e-9283-92a7-a22c-6207eec79eaf"><div class="dx-item-content dx-tab-content"><span class="dx-tab-text">Credit Cart</span></div></div><div class="dx-item dx-tab" aria-selected="false" role="tab"><div class="dx-item-content dx-tab-content"><span class="dx-tab-text">Cash</span></div></div><div class="dx-item dx-tab" aria-selected="false" role="tab"><div class="dx-item-content dx-tab-content"><span class="dx-tab-text">PayPal</span></div></div></div></div></div><div class="dx-tabpanel-container" style="margin-top: -53px; padding-top: 53px;"><div class="dx-multiview-wrapper"><div class="dx-multiview-item-container"><div class="dx-item dx-multiview-item dx-item-selected" role="tabpanel" style="transform: translate(0px, 0px);"><div data-options="dxTemplate : { name: 'creditCart' } " class="dx-template-wrapper dx-item-content dx-multiview-item-content">
+                            <div class="credit-cart">
+                                <p>We accept the following payment methods</p>
+                                <div class="carts-img">
+                                    <div class="img visa"></div>
+                                    <div class="img maestro"></div>
+                                    <div class="img mastercart"></div>
+                                </div>
+                                <div class="card-form detail-form dx-form dx-widget dx-visibility-change-handler" data-bind="dxForm: {&#10;                                    showColonAfterLabel: false,&#10;                                    width: 330,&#10;                                    screenByWidth: function(){&#10;                                        return 'lg';&#10;                                    },&#10;                                    items: [{&#10;                                            name: 'name',&#10;                                            label: {&#10;                                                visible: false&#10;                                            },&#10;                                            editorType: 'dxTextBox',&#10;                                            editorOptions: {&#10;                                                placeholder: 'Name',&#10;                                                width:330,&#10;                                                height:30&#10;                                            }&#10;                                        }, {&#10;                                            name: 'email',&#10;                                            label: {&#10;                                                visible: false&#10;                                            },&#10;                                            editorType: 'dxTextBox',&#10;                                            editorOptions: {&#10;                                                mode: 'email',&#10;                                                placeholder: 'Email',&#10;                                                width:330,&#10;                                                height:30&#10;                                            },&#10;                                            validationRules: [{&#10;                                                    type: 'required',&#10;                                                    message: 'Email is required'&#10;                                                }, {&#10;                                                    type: 'email'&#10;                                            }]&#10;&#10;                                        }, {&#10;                                            name: 'password',&#10;                                            label: {&#10;                                                visible: false&#10;                                            },&#10;                                            editorType: 'dxTextBox',&#10;                                            editorOptions: {&#10;                                                mode: 'password',&#10;                                                placeholder: 'Password',&#10;                                                width:330,&#10;                                                height:30&#10;                                            }&#10;&#10;                                        }, {&#10;                                            itemType: 'group',&#10;                                            cssClass: 'card-padding',&#10;                                            items: [{&#10;                                                    name: 'card',&#10;                                                    label: {&#10;                                                        visible: false&#10;                                                    },&#10;                                                    editorType: 'dxTextBox',&#10;                                                    editorOptions: {&#10;                                                        placeholder: 'Card #',&#10;                                                        width:330,&#10;                                                        height:30&#10;                                                    }&#10;                                                }, {&#10;                                                    itemType: 'group',&#10;                                                    colCount: 3,&#10;                                                    cssClass: 'exp-date',&#10;                                                    items: [{&#10;                                                            dataField: 'ExpDate',&#10;                                                            editorType: 'dxSelectBox',&#10;                                                            colSpan: 2,&#10;                                                            cssClass: 'month',&#10;                                                            editorOptions: {&#10;                                                                placeholder: 'Month',&#10;                                                                dataSource: $root.selectMonthsAndYears,&#10;                                                                displayExpr: 'month',&#10;                                                                height:30&#10;                                                            }&#10;                                                        }, {&#10;                                                            name: 'year',&#10;                                                            label: {&#10;                                                                visible: false&#10;                                                            },&#10;                                                            editorType: 'dxSelectBox',&#10;                                                            editorOptions: {&#10;                                                                placeholder: 'Year',&#10;                                                                dataSource: $root.selectMonthsAndYears,&#10;                                                                displayExpr: 'year',&#10;                                                                height:30&#10;                                                            }&#10;                                                    }]&#10;                                            }]&#10;                                     }]&#10;                                }" role="form" style="width: 330px;"><div class="dx-layout-manager dx-widget"><div class="dx-widget dx-collection dx-responsivebox-screen-lg dx-responsivebox" style="width: 100%; height: 100%;"><div class="dx-box-flex dx-box dx-widget dx-visibility-change-handler dx-collection" style="display: flex; flex-direction: column; width: 100%; height: 100%; justify-content: flex-start; align-items: stretch;"><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-row dx-first-col dx-last-col dx-field-item dx-col-0 dx-field-item-optional dx-flex-layout"><div class="dx-field-item-content dx-field-item-content-location-right"><div class="dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-texteditor-empty" style="width: 330px; height: 30px;"><div class="dx-texteditor-container"><input autocomplete="off" id="dx_dx-732c2e88-aa63-129e-de2c-e35bfaa47645_name" class="dx-texteditor-input" type="text" spellcheck="false" tabindex="0" role="textbox" aria-required="false" style="min-height: 0px;" /><div data-dx_placeholder="Name" class="dx-placeholder"></div><div class="dx-texteditor-buttons-container"></div></div></div></div></div></div></div><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-col dx-last-col dx-field-item dx-col-0 dx-field-item-required dx-flex-layout"><div class="dx-field-item-content dx-field-item-content-location-right"><div class="dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-texteditor-empty dx-validator dx-visibility-change-handler" style="width: 330px; height: 30px;"><div class="dx-texteditor-container"><input autocomplete="off" id="dx_dx-732c2e88-aa63-129e-de2c-e35bfaa47645_email" class="dx-texteditor-input" type="email" spellcheck="false" tabindex="0" role="textbox" aria-required="true" style="min-height: 0px;" /><div data-dx_placeholder="Email" class="dx-placeholder"></div><div class="dx-texteditor-buttons-container"></div></div></div></div></div></div></div><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-col dx-last-col dx-field-item dx-col-0 dx-field-item-optional dx-flex-layout"><div class="dx-field-item-content dx-field-item-content-location-right"><div class="dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-texteditor-empty" style="width: 330px; height: 30px;"><div class="dx-texteditor-container"><input autocomplete="off" id="dx_dx-732c2e88-aa63-129e-de2c-e35bfaa47645_password" class="dx-texteditor-input" type="password" spellcheck="false" tabindex="0" role="textbox" aria-required="false" style="min-height: 0px;" /><div data-dx_placeholder="Password" class="dx-placeholder"></div><div class="dx-texteditor-buttons-container"></div></div></div></div></div></div></div><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="card-padding dx-first-col dx-last-col dx-field-item dx-col-0 dx-field-item-optional"><div class="dx-field-item-content dx-field-item-content-location-right"><div class="dx-form-group dx-group-colcount-1"><div class="dx-form-group-content"><div class="dx-layout-manager dx-widget"><div class="dx-widget dx-collection dx-responsivebox-screen-lg dx-responsivebox" style="width: 100%; height: 100%;"><div class="dx-box-flex dx-box dx-widget dx-visibility-change-handler dx-collection" style="display: flex; flex-direction: column; width: 100%; height: 100%; justify-content: flex-start; align-items: stretch;"><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-row dx-first-col dx-last-col dx-field-item dx-col-0 dx-field-item-optional dx-flex-layout"><div class="dx-field-item-content dx-field-item-content-location-right"><div class="dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-texteditor-empty" style="width: 330px; height: 30px;"><div class="dx-texteditor-container"><input autocomplete="off" id="dx_dx-732c2e88-aa63-129e-de2c-e35bfaa47645_card" class="dx-texteditor-input" type="text" spellcheck="false" tabindex="0" role="textbox" aria-required="false" style="min-height: 0px;" /><div data-dx_placeholder="Card #" class="dx-placeholder"></div><div class="dx-texteditor-buttons-container"></div></div></div></div></div></div></div><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="exp-date dx-first-col dx-last-col dx-field-item dx-col-0 dx-field-item-optional"><div class="dx-field-item-content dx-field-item-content-location-right"><div class="dx-form-group dx-group-colcount-3"><div class="dx-form-group-content"><div class="dx-layout-manager dx-widget"><div class="dx-widget dx-collection dx-responsivebox-screen-lg dx-responsivebox" style="width: 100%; height: 100%;"><div class="dx-box-flex dx-box dx-widget dx-visibility-change-handler dx-collection" style="display: flex; flex-direction: column; width: 100%; height: 100%; justify-content: flex-start; align-items: stretch;"><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content dx-box-flex dx-box dx-widget dx-visibility-change-handler dx-collection" style="display: flex; flex-direction: row; justify-content: flex-start; align-items: stretch; width: auto; height: auto; flex-basis: 0px; flex-grow: 1;"><div class="dx-item dx-box-item" style="display: flex; min-width: auto; flex: 2 1 0px;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="month dx-first-row dx-first-col dx-field-item dx-col-0 dx-field-item-optional dx-flex-layout dx-label-h-align"><label class="dx-field-item-label dx-field-item-label-location-left" for="dx_dx-732c2e88-aa63-129e-de2c-e35bfaa47645_ExpDate"><span class="dx-field-item-label-content" style="width: 54px;"><span class="dx-field-item-label-text">Exp Date</span></span></label><div class="dx-field-item-content dx-field-item-content-location-right"><div class="dx-selectbox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-texteditor-empty dx-dropdowneditor-button-visible dx-dropdowneditor dx-dropdowneditor-field-clickable" style="height: 30px;"><div class="dx-dropdowneditor-input-wrapper dx-selectbox-container"><input type="hidden" name="ExpDate" value="" /><div class="dx-texteditor-container"><input autocomplete="off" id="dx_dx-732c2e88-aa63-129e-de2c-e35bfaa47645_ExpDate" class="dx-texteditor-input" aria-haspopup="true" aria-autocomplete="list" type="text" readonly="" spellcheck="false" tabindex="0" role="combobox" aria-expanded="false" aria-required="false" style="min-height: 0px;" /><div data-dx_placeholder="Month" class="dx-placeholder"></div><div class="dx-texteditor-buttons-container"><div class="dx-dropdowneditor-button dx-button-normal dx-button-mode-contained dx-widget" role="button"><div class="dx-button-content"><div class="dx-dropdowneditor-icon"></div></div></div></div></div></div></div></div></div></div></div><div class="dx-item dx-box-item" style="display: flex; min-width: auto; flex: 1 1 0px;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-row dx-last-col dx-field-item dx-col-2 dx-field-item-optional dx-flex-layout"><div class="dx-field-item-content dx-field-item-content-location-right"><div class="dx-selectbox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-texteditor-empty dx-dropdowneditor-button-visible dx-dropdowneditor dx-dropdowneditor-field-clickable" style="height: 30px;"><div class="dx-dropdowneditor-input-wrapper dx-selectbox-container"><input type="hidden" value="" /><div class="dx-texteditor-container"><input autocomplete="off" id="dx_dx-732c2e88-aa63-129e-de2c-e35bfaa47645_year" class="dx-texteditor-input" aria-haspopup="true" aria-autocomplete="list" type="text" readonly="" spellcheck="false" tabindex="0" role="combobox" aria-expanded="false" aria-required="false" style="min-height: 0px;" /><div data-dx_placeholder="Year" class="dx-placeholder"></div><div class="dx-texteditor-buttons-container"><div class="dx-dropdowneditor-button dx-button-normal dx-button-mode-contained dx-widget" role="button"><div class="dx-button-content"><div class="dx-dropdowneditor-icon"></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+                            </div>
+                        </div></div><div class="dx-item dx-multiview-item dx-multiview-item-hidden" role="tabpanel" aria-hidden="true"><div class=""></div></div><div class="dx-item dx-multiview-item dx-multiview-item-hidden" role="tabpanel" aria-hidden="true"><div class=""></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+                </div>
+                <h4>Billing Information</h4>
+                <div class="billing-information">
+                    <div class="detail-form dx-form dx-widget dx-visibility-change-handler" data-bind="dxForm: {&#10;                        width: 330,&#10;                        screenByWidth: function(){&#10;                            return 'lg';&#10;                        },&#10;                        items: [{&#10;                                name: 'address',&#10;                                label: {&#10;                                    visible: false&#10;                                },&#10;                                editorType: 'dxTextBox',&#10;                                editorOptions: {&#10;                                    placeholder: 'Address',&#10;                                    width: 330,&#10;                                    height: 30&#10;                                }&#10;                            }, {&#10;                                name: 'city',&#10;                                label: {&#10;                                    visible: false&#10;                                },&#10;                                editorType: 'dxTextBox',&#10;                                editorOptions: {&#10;                                    placeholder: 'City',&#10;                                    width: 330,&#10;                                    height: 30&#10;                                }&#10;                            }, {&#10;                                itemType: 'group',&#10;                                colCount: 3,&#10;                                items: [{&#10;                                        name: 'state',&#10;                                        label: {&#10;                                            visible: false&#10;                                        },&#10;                                        editorType: 'dxSelectBox',&#10;                                        editorOptions: {&#10;                                            dataSource: listState,&#10;                                            displayExpr: 'name',&#10;                                            placeholder: 'State',&#10;                                            height: 30&#10;                                        }&#10;                                    }, {&#10;                                        name: 'zipcode',&#10;                                        label: {&#10;                                            visible: false&#10;                                        },&#10;                                        colSpan: 2,&#10;                                        editorType: 'dxTextBox',&#10;                                        editorOptions: {&#10;                                            placeholder: 'Zipcode',&#10;                                            height: 30&#10;                                        }&#10;                                }]&#10;                            }, {&#10;                                editorType: 'dxCheckBox',&#10;                                editorOptions: {&#10;                                    text: 'Please create an account',&#10;                                    value: false,&#10;                                    width: 200&#10;                                }&#10;                         }]&#10;                    }" role="form" style="width: 330px;"><div class="dx-layout-manager dx-widget"><div class="dx-widget dx-collection dx-responsivebox dx-responsivebox-screen-lg" style="width: 100%; height: 100%;"><div class="dx-box-flex dx-box dx-widget dx-visibility-change-handler dx-collection" style="display: flex; flex-direction: column; width: 100%; height: 100%; justify-content: flex-start; align-items: stretch;"><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-row dx-first-col dx-last-col dx-field-item dx-col-0 dx-field-item-optional dx-flex-layout"><div class="dx-field-item-content dx-field-item-content-location-right"><div class="dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-texteditor-empty" style="width: 330px; height: 30px;"><div class="dx-texteditor-container"><input autocomplete="off" id="dx_dx-d61d2284-29b0-f250-cb43-6ad0b0268eb9_address" class="dx-texteditor-input" type="text" spellcheck="false" tabindex="0" role="textbox" aria-required="false" style="min-height: 0px;" /><div data-dx_placeholder="Address" class="dx-placeholder"></div><div class="dx-texteditor-buttons-container"></div></div></div></div></div></div></div><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-col dx-last-col dx-field-item dx-col-0 dx-field-item-optional dx-flex-layout"><div class="dx-field-item-content dx-field-item-content-location-right"><div class="dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-texteditor-empty" style="width: 330px; height: 30px;"><div class="dx-texteditor-container"><input autocomplete="off" id="dx_dx-d61d2284-29b0-f250-cb43-6ad0b0268eb9_city" class="dx-texteditor-input" type="text" spellcheck="false" tabindex="0" role="textbox" aria-required="false" style="min-height: 0px;" /><div data-dx_placeholder="City" class="dx-placeholder"></div><div class="dx-texteditor-buttons-container"></div></div></div></div></div></div></div><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-col dx-last-col dx-field-item dx-col-0 dx-field-item-optional"><div class="dx-field-item-content dx-field-item-content-location-right"><div class="dx-form-group dx-group-colcount-3"><div class="dx-form-group-content"><div class="dx-layout-manager dx-widget"><div class="dx-widget dx-collection dx-responsivebox-screen-lg dx-responsivebox" style="width: 100%; height: 100%;"><div class="dx-box-flex dx-box dx-widget dx-visibility-change-handler dx-collection" style="display: flex; flex-direction: column; width: 100%; height: 100%; justify-content: flex-start; align-items: stretch;"><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content dx-box-flex dx-box dx-widget dx-visibility-change-handler dx-collection" style="display: flex; flex-direction: row; justify-content: flex-start; align-items: stretch; width: auto; height: auto; flex-basis: 0px; flex-grow: 1;"><div class="dx-item dx-box-item" style="display: flex; min-width: auto; flex: 1 1 0px;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-row dx-first-col dx-field-item dx-col-0 dx-field-item-optional dx-flex-layout"><div class="dx-field-item-content dx-field-item-content-location-right"><div class="dx-selectbox dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-texteditor-empty dx-dropdowneditor-button-visible dx-dropdowneditor dx-dropdowneditor-field-clickable" style="height: 30px;"><div class="dx-dropdowneditor-input-wrapper dx-selectbox-container"><input type="hidden" value="" /><div class="dx-texteditor-container"><input autocomplete="off" id="dx_dx-d61d2284-29b0-f250-cb43-6ad0b0268eb9_state" class="dx-texteditor-input" aria-haspopup="true" aria-autocomplete="list" type="text" readonly="" spellcheck="false" tabindex="0" role="combobox" aria-expanded="false" aria-required="false" style="min-height: 0px;" /><div data-dx_placeholder="State" class="dx-placeholder"></div><div class="dx-texteditor-buttons-container"><div class="dx-dropdowneditor-button dx-button-normal dx-button-mode-contained dx-widget" role="button"><div class="dx-button-content"><div class="dx-dropdowneditor-icon"></div></div></div></div></div></div></div></div></div></div></div><div class="dx-item dx-box-item" style="display: flex; min-width: auto; flex: 2 1 0px;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-row dx-last-col dx-field-item dx-col-1 dx-field-item-optional dx-flex-layout"><div class="dx-field-item-content dx-field-item-content-location-right"><div class="dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-texteditor-empty" style="height: 30px;"><div class="dx-texteditor-container"><input autocomplete="off" id="dx_dx-d61d2284-29b0-f250-cb43-6ad0b0268eb9_zipcode" class="dx-texteditor-input" type="text" spellcheck="false" tabindex="0" role="textbox" aria-required="false" style="min-height: 0px;" /><div data-dx_placeholder="Zipcode" class="dx-placeholder"></div><div class="dx-texteditor-buttons-container"></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><div class="dx-item dx-box-item" style="display: flex; min-height: auto; flex-grow: 1; flex-shrink: 1;"><div class="dx-item-content dx-box-item-content" style="width: auto; height: auto; display: flex; flex-basis: 0px; flex-grow: 1; flex-direction: column;"><div class="dx-first-col dx-last-col dx-field-item dx-col-0 dx-field-item-optional dx-flex-layout"><div class="dx-field-item-content dx-field-item-content-location-right"><div role="checkbox" class="dx-checkbox dx-checkbox-has-text dx-widget" aria-checked="false" tabindex="0" aria-required="false" style="width: 200px;"><input type="hidden" value="false" /><div class="dx-checkbox-container"><span class="dx-checkbox-icon"></span><span class="dx-checkbox-text">Please create an account</span></div></div></div></div></div></div></div></div></div></div>
+                </div>
+            </div>
+            <div class="count-on-us">
+                <div class="tittle">YOU CAN COUNT ON US</div>
+                <div class="checks">
+                    <div class="check"></div>
+                    <div class="check"></div>
+                    <div class="check"></div>
+                </div>
+                <div class="captions">
+                    <div class="caption">We don't process credit cards </div>
+                    <div class="caption">We don't have any hotels</div>
+                    <div class="caption">We only offer great controls</div>
+                </div>
+            </div>
+        </div>
+    </div></div>
+            </div>
+            <div class="footer-gap"></div>
+        </div>
+        <footer>
+            <div class="external-footer">
+                <div class="footer">
+                    <div class="powered">
+                    </div>
+                    <div class="wrapper copyright">Copyright © <span data-bind="text: copyrightDate">2021</span> Developer Express Inc.</div>
+                </div>
+            </div>
+        </footer>
+        <!-- /ko -->
+    </div>
+</div></div><script type="text/javascript" id="" src="https://www.devexpress.com/api/dxvisitor"></script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","436610470729915");fbq("track","PageView");</script>
+<noscript>
+ &lt;img height="1" width="1" src="https://www.facebook.com/tr?id=436610470729915&amp;amp;ev=PageView
+&amp;amp;noscript=1"&gt;
+</noscript>
+<div style="visibility: hidden; position: fixed; left: 100%; top: 100%; font: bold 6pt SegoeBing, &quot;Segoe UI&quot;, Frutiger, &quot;Frutiger Linotype&quot;, &quot;Dejavu Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif;">X</div></body></html>
