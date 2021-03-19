@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="verificar la tarifa de los clientes" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-03-18T20:38:18" hostname="CHMEPPF17WKEY" time="84.622">
+<testsuite name="verificar la tarifa de los clientes" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-03-19T01:39:45" hostname="CHMEPPF17WKEY" time="99.914">
   <properties/>
-  <testcase name="buscar tarifa mas economica en los diferentes destinos y verificar" classname="verificar la tarifa de los clientes" time="42.203"/>
-  <testcase name="buscar tarifa mas economica en los diferentes destinos y verificar" classname="verificar la tarifa de los clientes" time="42.416"/>
+  <testcase name="buscar tarifa mas economica en los diferentes destinos y verificar" classname="verificar la tarifa de los clientes" time="47.584"/>
+  <testcase name="buscar tarifa mas economica en los diferentes destinos y verificar" classname="verificar la tarifa de los clientes" time="52.325"/>
   <system-out><![CDATA[Nprecio total 218.0
 218.0
 Nprecio total 897.0
 897.0
 ]]></system-out>
-  <system-err><![CDATA[mar 18, 2021 3:38:18 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[mar 18, 2021 8:39:46 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9) on port 35179
+Starting ChromeDriver 2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9) on port 13495
 Only local connections are allowed.
-mar 18, 2021 3:38:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+mar 18, 2021 8:40:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: OSS
 [Test worker] INFO net.serenitybdd.core.Serenity - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
@@ -24,9 +24,9 @@ INFORMACIÓN: Detected dialect: OSS
 
 TEST PASSED: buscar tarifa mas economica en los diferentes destinos y verificar
 ----------------------------------------------------------------------------
-mar 18, 2021 3:39:00 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+mar 18, 2021 8:40:33 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-mar 18, 2021 3:39:07 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+mar 18, 2021 8:40:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: OSS
 [Test worker] INFO net.serenitybdd.core.Serenity - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
