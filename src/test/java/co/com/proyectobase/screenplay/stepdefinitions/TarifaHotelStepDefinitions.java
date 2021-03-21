@@ -1,8 +1,12 @@
 package co.com.proyectobase.screenplay.stepdefinitions;
 
-import co.com.proyectobase.screenplay.questions.VerificarPrecio;
-import co.com.proyectobase.screenplay.tasks.PrecioEconomico;
-import co.com.proyectobase.screenplay.tasks.Seleccionar;
+import co.com.proyectobase.screenplay.questions.VerificarMensajeContactenos;
+import co.com.proyectobase.screenplay.questions.VerificarSpeaker;
+import co.com.proyectobase.screenplay.questions.VerificarUsuarioRegistrado;
+import co.com.proyectobase.screenplay.tasks.IngresoCuenta;
+import co.com.proyectobase.screenplay.tasks.CrearCuenta;
+import co.com.proyectobase.screenplay.tasks.RegistroContactenos;
+import co.com.proyectobase.screenplay.tasks.SeleccionarSpeaker;
 import co.com.proyectobase.screenplay.userinterface.HomePage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -30,27 +34,53 @@ public class TarifaHotelStepDefinitions {
     public void configuracionInicial() {
         rafa.can(BrowseTheWeb.with(hisBrowser));
     }
-    @Given("^Yo ingreso a la pagina de viajes")
-    public void yoIngresoALaPaginaDeViajes() {
+    @Given("^Yo ingreso a la pagina de compras")
+    public void yoIngresoalapaginadecompras() {
         rafa.wasAbleTo(Open.browserOn(new HomePage()));
 
     }
 
-    @When("^Yo selecciono la ciudad (.*) en el dia (.*) hasta (.*)$")
-    public void yoSeleccionoLaCiudadeneldiahasta(String location, String checkIn, String checkOut) {
+    @When("^Yo ingreso a la creacion de cuentas con los (.*) (.*) (.*)$")
+    public void yoIngresoalacreaciondecuentas(String usuario, String correo, String contraseña) {
         rafa.attemptsTo(
-                Seleccionar.plan(location,checkIn,checkOut)
+                CrearCuenta.datos(usuario,correo,contraseña)
         );
     }
 
-    @When("^yo selecciono precio mas economico$")
-    public void yoSeleccionopreciomaseconomico() {
-        rafa.attemptsTo(PrecioEconomico.hotel());
+
+    @Then("^yo valido mensaje registro (.*)$")
+    public void yoValidomensajeregistro(String usuario ) {
+        rafa.should(seeThat(VerificarUsuarioRegistrado.mensaje(usuario), is(true)));
+    }
+
+    @When("^yo ingreso a la cuenta con los datos (.*) (.*)$")
+    public void yoIngresoalacuentasconlosdatos(String usuario, String Contraseña) {
+        rafa.attemptsTo(IngresoCuenta.datos(usuario,Contraseña));
 
     }
 
-    @Then("^yo valido precio total (.*) con (.*)$")
-    public void yoValidopreciototalcon(String checkIn, String checkOut ) {
-        rafa.should(seeThat(VerificarPrecio.precioTotal(checkIn,checkOut), is(true)));
+    @When("^yo registro contactenos con el (.*) la (.*) el (.*) y (.*)$")
+    public void yoRegistrocontactenoscon(String articulo, String marca, String correo, String infor ) {
+        rafa.attemptsTo(RegistroContactenos.datos(articulo,marca,correo,infor));
+
     }
+
+
+    @Then("^yo valido mensaje contactenos$")
+    public void yoValidomensajecontactenos() {
+        rafa.should(seeThat(VerificarMensajeContactenos.mensaje(), is(true)));
+    }
+
+
+    @When("^yo selecciono y agrego un producto (.*)$")
+    public void yoseleccionoyagregounproducto(String speaker ) {
+        rafa.attemptsTo(SeleccionarSpeaker.datos(speaker));
+
+    }
+
+    @Then("^yo valido mensaje en carrito (.*)$")
+    public void yoValidomensajecontactenos(String speaker ) {
+        rafa.should(seeThat(VerificarSpeaker.mensaje(speaker), is(true)));
+    }
+
 }

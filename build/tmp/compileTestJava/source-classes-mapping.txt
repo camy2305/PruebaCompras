@@ -1,4 +1,4 @@
 co/com/proyectobase/screenplay/stepdefinitions/TarifaHotelStepDefinitions.java
  co.com.proyectobase.screenplay.stepdefinitions.TarifaHotelStepDefinitions
-co/com/proyectobase/screenplay/runners/TarifaHotel.java
- co.com.proyectobase.screenplay.runners.TarifaHotel
+co/com/proyectobase/screenplay/runners/RegistoUsuario.java
+ co.com.proyectobase.screenplay.runners.RegistoUsuario

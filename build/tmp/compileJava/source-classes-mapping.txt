@@ -1,16 +1,24 @@
-co/com/proyectobase/screenplay/userinterface/HomePage.java
- co.com.proyectobase.screenplay.userinterface.HomePage
 co/com/proyectobase/screenplay/util/CalcularDias.java
  co.com.proyectobase.screenplay.util.CalcularDias
-co/com/proyectobase/screenplay/tasks/PrecioEconomico.java
- co.com.proyectobase.screenplay.tasks.PrecioEconomico
-co/com/proyectobase/screenplay/userinterface/ValidarPrecioPage.java
- co.com.proyectobase.screenplay.userinterface.ValidarPrecioPage
-co/com/proyectobase/screenplay/interactions/SeleccionarLocation.java
- co.com.proyectobase.screenplay.interactions.SeleccionarLocation
-co/com/proyectobase/screenplay/tasks/Seleccionar.java
- co.com.proyectobase.screenplay.tasks.Seleccionar
-co/com/proyectobase/screenplay/questions/VerificarPrecio.java
- co.com.proyectobase.screenplay.questions.VerificarPrecio
-co/com/proyectobase/screenplay/userinterface/SeleccionHotelPage.java
- co.com.proyectobase.screenplay.userinterface.SeleccionHotelPage
+co/com/proyectobase/screenplay/userinterface/HomePage.java
+ co.com.proyectobase.screenplay.userinterface.HomePage
+co/com/proyectobase/screenplay/questions/VerificarSpeaker.java
+ co.com.proyectobase.screenplay.questions.VerificarSpeaker
+co/com/proyectobase/screenplay/tasks/IngresoCuenta.java
+ co.com.proyectobase.screenplay.tasks.IngresoCuenta
+co/com/proyectobase/screenplay/interactions/SeleccionarArticulo.java
+ co.com.proyectobase.screenplay.interactions.SeleccionarArticulo
+co/com/proyectobase/screenplay/tasks/RegistroContactenos.java
+ co.com.proyectobase.screenplay.tasks.RegistroContactenos
+co/com/proyectobase/screenplay/tasks/SeleccionarSpeaker.java
+ co.com.proyectobase.screenplay.tasks.SeleccionarSpeaker
+co/com/proyectobase/screenplay/questions/VerificarUsuarioRegistrado.java
+ co.com.proyectobase.screenplay.questions.VerificarUsuarioRegistrado
+co/com/proyectobase/screenplay/questions/VerificarMensajeContactenos.java
+ co.com.proyectobase.screenplay.questions.VerificarMensajeContactenos
+co/com/proyectobase/screenplay/interactions/SeleccionarTipoSpeaker.java
+ co.com.proyectobase.screenplay.interactions.SeleccionarTipoSpeaker
+co/com/proyectobase/screenplay/interactions/SeleccionarMarca.java
+ co.com.proyectobase.screenplay.interactions.SeleccionarMarca
+co/com/proyectobase/screenplay/tasks/CrearCuenta.java
+ co.com.proyectobase.screenplay.tasks.CrearCuenta

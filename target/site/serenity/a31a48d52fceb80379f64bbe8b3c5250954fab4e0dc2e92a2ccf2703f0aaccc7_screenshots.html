@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Demo Project using Serenity and Cucumber</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="6f832c84baec0f6696692c336bd7f3fe7d545d3e0c19eb5ad2864b9122a46dba.html">Verificar La Tarifa De Los Clientes</a></span>
+                > <span class="truncate-60"><a
+                    href="a31a48d52fceb80379f64bbe8b3c5250954fab4e0dc2e92a2ccf2703f0aaccc7.html">Registro exitoso </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 20-03-2021 00:12</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Verificar La Tarifa De Los Clientes </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="fa6240930fdbc18bb769cd3f99f6c79a9ae540bd58975cdbf962200efa0a89e5.html">Registro
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Registro exitoso
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given Yo ingreso a la pagina de compras<br>When Yo ingreso a la creacion de cuentas con los datos &lt;usuario&gt; &lt;correo&gt; &lt;contraseña&gt;<br>Then yo valido mensaje registro &lt;usuario&gt;</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="1c993c2cc2973da9608f1a2da9f2fbc9d76c4b4488fa8008d6e2c78ee1c6aae2.png" title="Registro exitoso #1: {usuario=Juanc124, correo=Juanc124@gmail.com, contrase&ntilde;a=Juanc112}" width="1366"/>
+                <img src="9f687c6d4444846902fcb16be14af92867f790287a4b4fb10d66213c357dce0b.png" title="Given Yo ingreso a la pagina de compras" width="1366"/>
+                <img src="d6ac333f43c1c0b88979b555380c250406a61028e1ce125d9e1505a3c3ed4562.png" title="Rafa opens the Home page" width="1366"/>
+                <img src="1c993c2cc2973da9608f1a2da9f2fbc9d76c4b4488fa8008d6e2c78ee1c6aae2.png" title="When Yo ingreso a la creacion de cuentas con los datos Juanc124 Juanc124@gmail.com Juanc112" width="1366"/>
+                <img src="7291f0f9c4e58607255cf9d2462f2c08154d1f86f712cdb896a095fed22a90a0.png" title="Rafa clicks on BOTON_USER" width="1366"/>
+                <img src="f8a100eb18ce219c424866d106c8440cbd4812910913db3464cf1922bbf2b9e7.png" title="Rafa clicks on BOTON_NEWACC" width="1366"/>
+                <img src="df66aa9d87e9d50444b13322cf57584f2217e3cd628145e63d4544079112c5bd.png" title="Rafa enters 'Juanc124' into CAMPO_USERNAME" width="1366"/>
+                <img src="a9a0a0a5f0d63ea9c140c5861927014871167e46dfb5e000f01917bc50e253d7.png" title="Rafa enters 'Juanc124@gmail.com' into CAMPO_CORREO" width="1366"/>
+                <img src="323dc97da8a743e4503e8b537f2e9b4a9a02400f36e2a41e494ea473c7ab13b9.png" title="Rafa enters 'Juanc112' into CAMPO_PASS" width="1366"/>
+                <img src="aabf77305d14b807a807b7c08bdf0980b35be430c9bb92049397ebb9b48a97ad.png" title="Rafa enters 'Juanc112' into CAMPO_CPASS" width="1366"/>
+                <img src="06b02c52918970d1efb6c55aa0175cd88e0f61f63d88e447bc5c10238f402952.png" title="Rafa clicks on TERMINOS" width="1366"/>
+                <img src="80f87b31207fc24397c00d060c81efcbdac485ee6bfe47afe005f186598adcc3.png" title="Rafa clicks on BTN_REGISTER" width="1366"/>
+                <img src="1c993c2cc2973da9608f1a2da9f2fbc9d76c4b4488fa8008d6e2c78ee1c6aae2.png" title="Then yo valido mensaje registro Juanc124" width="1366"/>
+                <img src="1c993c2cc2973da9608f1a2da9f2fbc9d76c4b4488fa8008d6e2c78ee1c6aae2.png" title="Then verificar usuario registrado should be (true): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.9.9</span>
+</div>
+</body>
+</html>
